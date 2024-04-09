@@ -1,9 +1,10 @@
 import React from "react";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Resident = ({resident}) => {
-    const {estate_title, status, area, description, price, segment_name, location} = resident;
+    const {id, estate_title, status, area, description, price, segment_name, location} = resident;
     const desc = description.length > 90 ? description.slice(0, 90) : description;
   return (
       <div className="col-span-4">
@@ -52,9 +53,9 @@ const Resident = ({resident}) => {
               
             </div>
             <div>
-              <button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">
+              <Link to={`/resident/details/${id}`}><button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">
                 Details
-              </button>
+              </button></Link>
               <hr className="mb-3" />
             </div>
           </div>
