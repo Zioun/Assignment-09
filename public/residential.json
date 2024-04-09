@@ -2,7 +2,7 @@
   {
     "estate_title": "Modern Single-Family Home",
     "id": "001",
-    "segment_name": "Single-family homes",
+    "segment_name": "Single family homes",
     "description": "Beautifully designed modern single-family home with spacious rooms and scenic views.",
     "price": "$500,000",
     "status": "sale",
@@ -124,7 +124,7 @@
   {
     "estate_title": "Family-Friendly Suburban Home",
     "id": "007",
-    "segment_name": "Single-family homes",
+    "segment_name": "Single family homes",
     "description": "Spacious suburban home perfect for families, with a large backyard and nearby parks. This home features 4 bedrooms, 2.5 bathrooms, a gourmet kitchen, and a finished basement.",
     "price": "$450,000",
     "status": "sale",

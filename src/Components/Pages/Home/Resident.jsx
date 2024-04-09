@@ -1,6 +1,10 @@
 import React from "react";
+import { SlSizeFullscreen } from "react-icons/sl";
+import { CiLocationArrow1 } from "react-icons/ci";
 
-const Resident = () => {
+const Resident = ({resident}) => {
+    const {estate_title, status, area, description, price, segment_name, location} = resident;
+    const desc = description.length > 90 ? description.slice(0, 90) : description;
   return (
       <div className="col-span-4">
         <div className="bg-white shadow-md rounded overflow-hidden ">
@@ -15,15 +19,12 @@ const Resident = () => {
               <div className="text-[13px] flex justify-between px-5 pt-2">
                 <div>
                   <h1 className="bg-[#262525] text-white px-3 rounded">
-                    Featured
+                    {segment_name}
                   </h1>
                 </div>
                 <div className="flex gap-5">
                   <h1 className="bg-[#A62F03] text-white px-3 rounded">
-                    Fore Sale
-                  </h1>
-                  <h1 className="bg-[#A62F03] text-white px-3 rounded">
-                    Active
+                    Fore {status}
                   </h1>
                 </div>
               </div>
@@ -32,18 +33,23 @@ const Resident = () => {
           <div className="px-5">
             <div>
               <h1 className="text-[20px] font-bold mt-3">
-                Bilocale in affitto in via Giacinta Pezzana
+                {estate_title}
               </h1>
-              <p className="text-[#A62F03] font-bold my-1">850 € / mese</p>
+              <p className="text-[#A62F03] font-bold my-1">{price}</p>
               <p className="text-[14px]">
-                Parioli Muse Delizioso Appartamento arredato. Nelle immediate
-                vicinanze di Piazzale delle …
+                {desc}....
               </p>
             </div>
             <div className="flex gap-5 py-2">
-              <span>1</span>
-              <span>2</span>
-              <span>52m2</span>
+                <div className="flex justify-center items-center gap-2">
+                    <CiLocationArrow1 className="text-[20px]"/>
+                    <span>{location.city}, {location.state}</span>
+                </div>
+              <div className="flex items-center gap-2 justify-center">
+                <span><SlSizeFullscreen /></span>
+                <span>{area}</span>
+              </div>
+              
             </div>
             <div>
               <button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">

@@ -60,7 +60,7 @@ const Home = () => {
                 <div className='container m-auto max-w-[1130px]'>
                     <div className='grid grid-cols-12 gap-10'>
                         {
-                            resident.map(resident => <Resident></Resident>)
+                            resident.map(resident => <Resident key={resident.id} resident={resident}></Resident>)
                         }
                           
                     </div>
