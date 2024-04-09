@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../../assets/logo.png';
 import { FaPhoneAlt } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
@@ -59,7 +59,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3">
               <span className="text-[30px] text-[#A62F03] cursor-pointer"><CgProfile /></span>
-              <button className="bg-[#A62F03] text-white h-[40px] w-[100px] rounded-lg">Login</button>
+              <Link to="/login"><button className="bg-[#A62F03] text-white h-[40px] w-[100px] rounded-lg">Login</button></Link>
             </div>
           </div>
         </div>

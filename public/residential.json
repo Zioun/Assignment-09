@@ -1,0 +1,185 @@
+[
+  {
+    "estate_title": "Modern Single-Family Home",
+    "id": "001",
+    "segment_name": "Single-family homes",
+    "description": "Beautifully designed modern single-family home with spacious rooms and scenic views.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": {
+      "address": "1234 Oak Street",
+      "city": "Anytown",
+      "state": "USA",
+      "zipcode": "12345"
+    },
+    "facilities": ["living room", "kitchen", "backyard"],
+    "year_built": 2018,
+    "num_bedrooms": 4,
+    "num_bathrooms": 3.5,
+    "garage_capacity": 2,
+    "lot_size": "0.3 acres",
+    "hoa_fee": "$100/month",
+    "school_district": "Anytown School District",
+    "image_url": "https://example.com/images/single_family_home.jpg"
+  },
+  {
+    "estate_title": "Luxury Apartment",
+    "id": "002",
+    "segment_name": "Apartments",
+    "description": "Luxurious apartment in a prime location with top-notch amenities and stunning city views.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": {
+      "address": "789 Elm Avenue",
+      "city": "Cityville",
+      "state": "USA",
+      "zipcode": "54321"
+    },
+    "facilities": ["living room", "swimming pool", "gym", "24/7 security"],
+    "year_built": 2015,
+    "building_amenities": ["rooftop terrace", "business center", "pet spa"],
+    "pet_policy": "Pets allowed with additional deposit",
+    "lease_terms": "12-month lease minimum",
+    "image_url": "https://example.com/images/luxury_apartment.jpg"
+  },
+  {
+    "estate_title": "Cozy Townhouse",
+    "id": "003",
+    "segment_name": "Townhouses",
+    "description": "Charming townhouse nestled in a quiet neighborhood, perfect for families.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": {
+      "address": "567 Maple Lane",
+      "city": "Suburbia",
+      "state": "USA",
+      "zipcode": "67890"
+    },
+    "facilities": ["living room", "kitchen", "patio"],
+    "year_built": 2000,
+    "hoa_fee": "$50/month",
+    "nearby_amenities": ["parks", "shopping centers", "schools"],
+    "image_url": "https://example.com/images/townhouse.jpg"
+  },
+  {
+    "estate_title": "Senior Living Community",
+    "id": "004",
+    "segment_name": "Senior living communities",
+    "description": "Resort-style senior living community offering a range of amenities and care services.",
+    "price": "$3,000/month",
+    "status": "rent",
+    "area": "Varies",
+    "location": {
+      "address": "321 Pine Street",
+      "city": "SeniorVille",
+      "state": "USA",
+      "zipcode": "13579"
+    },
+    "facilities": ["common areas", "meal services", "medical assistance"],
+    "level_of_care": "Independent living, assisted living, and memory care options available",
+    "amenities": ["swimming pool", "fitness center", "library"],
+    "image_url": "https://example.com/images/senior_living_community.jpg"
+  },
+  {
+    "estate_title": "Stylish Student Housing",
+    "id": "005",
+    "segment_name": "Student housing",
+    "description": "Modern and stylish student housing complex conveniently located near campus. Each unit is fully furnished and includes utilities, high-speed internet, and cable TV.",
+    "price": "$800/month",
+    "status": "rent",
+    "area": "600 sq ft",
+    "location": {
+      "address": "101 Campus Drive",
+      "city": "University Town",
+      "state": "USA",
+      "zipcode": "24680"
+    },
+    "facilities": ["study area", "fitness center", "laundry room"],
+    "lease_terms": "Individual leases, roommate matching available",
+    "security_features": ["controlled access", "security cameras"],
+    "image_url": "https://example.com/images/student_housing.jpg"
+  },
+  {
+    "estate_title": "Scenic Vacation Rental",
+    "id": "006",
+    "segment_name": "Vacation rentals",
+    "description": "Charming vacation rental with breathtaking views and easy access to outdoor activities. This rental features 2 bedrooms, 1 bathroom, a fully equipped kitchen, and a spacious deck overlooking the lake.",
+    "price": "$200/night",
+    "status": "rent",
+    "area": "1000 sq ft",
+    "location": {
+      "address": "789 Mountain Road",
+      "city": "Lakeside Retreat",
+      "state": "USA",
+      "zipcode": "97531"
+    },
+    "facilities": ["deck", "fireplace", "BBQ area"],
+    "available_dates": ["May 1 - September 30"],
+    "minimum_stay": "2 nights",
+    "image_url": "https://example.com/images/vacation_rental.jpg"
+  },
+  {
+    "estate_title": "Family-Friendly Suburban Home",
+    "id": "007",
+    "segment_name": "Single-family homes",
+    "description": "Spacious suburban home perfect for families, with a large backyard and nearby parks. This home features 4 bedrooms, 2.5 bathrooms, a gourmet kitchen, and a finished basement.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "2800 sq ft",
+    "location": {
+      "address": "456 Rose Avenue",
+      "city": "Suburbia",
+      "state": "USA",
+      "zipcode": "98765"
+    },
+    "facilities": ["living room", "kitchen", "backyard"],
+    "year_built": 1995,
+    "school_district": "Suburbia School District",
+    "nearby_attractions": ["parks", "shopping malls", "restaurants"],
+    "image_url": "https://example.com/images/suburban_home.jpg"
+  },
+  {
+    "estate_title": "Elegant Senior Living Residence",
+    "id": "008",
+    "segment_name": "Senior living communities",
+    "description": "Elegant senior living residence offering luxurious amenities and personalized care services. Residents enjoy spacious suites, gourmet dining, and a vibrant social calendar.",
+    "price": "$4,500/month",
+    "status": "rent",
+    "area": "Varies",
+    "location": {
+      "address": "987 Magnolia Boulevard",
+      "city": "Senior Haven",
+      "state": "USA",
+      "zipcode": "24680"
+    },
+    "facilities": ["dining hall", "library", "spa", "24/7 nursing care"],
+    "medical_services": [
+      "medication management",
+      "physical therapy",
+      "memory care"
+    ],
+    "image_url": "https://example.com/images/senior_living_residence.jpg"
+  },
+  {
+    "estate_title": "Downtown Loft Apartment",
+    "id": "009",
+    "segment_name": "Apartments",
+    "description": "Chic loft apartment in the heart of downtown, featuring exposed brick walls and modern finishes. This loft includes an open floor plan, floor-to-ceiling windows, and access to a rooftop terrace.",
+    "price": "$3,000/month",
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": {
+      "address": "654 Main Street",
+      "city": "Downtown",
+      "state": "USA",
+      "zipcode": "54321"
+    },
+    "facilities": ["open floor plan", "roof deck", "fitness center"],
+    "pet_policy": "Pets allowed with additional deposit",
+    "lease_terms": "Flexible lease options available",
+    "image_url": "https://example.com/images/downtown_loft_apartment.jpg"
+  }
+]
