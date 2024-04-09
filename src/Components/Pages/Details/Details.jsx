@@ -47,9 +47,9 @@ const Details = () => {
               <div className="px-5 pt-5 flex justify-between items-center">
                 <div>
                   <div className="py-3 flex gap-5">
-                    <span className="px-5 py-1 rounded text-white bg-[#262525] text-[14px]">
+                    <h1 className="px-5 py-1 rounded text-white bg-[#262525] text-[14px]">
                       {segment_name}
-                    </span>
+                    </h1>
                     <span className="px-5 py-1 rounded text-white bg-[#A62F03] text-[14px]">
                       For <span className="capitalize">{status}</span>
                     </span>
@@ -68,7 +68,7 @@ const Details = () => {
             <div className="px-5 py-5">
               <img
                 className="rounded"
-                src="https://it-wpresidence.b-cdn.net/wp-content/uploads/2021/05/decor_7.jpg"
+                src={image_url}
                 alt=""
               />
               <div className="pt-5">

@@ -22,7 +22,7 @@
     "lot_size": "0.3 acres",
     "hoa_fee": "$100/month",
     "school_district": "Anytown School District",
-    "image_url": "https://example.com/images/single_family_home.jpg",
+    "image_url": "https://i.ibb.co/4pKz4sJ/New-Project.jpg",
     "architect":"https://i.ibb.co/pzVzygy/New-Project.jpg"
   },
   {
@@ -45,7 +45,7 @@
     "building_amenities": ["rooftop terrace", "business center", "pet spa"],
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "12-month lease minimum",
-    "image_url": "https://example.com/images/luxury_apartment.jpg",
+    "image_url": "https://i.ibb.co/s2RkzPR/New-Project-1.jpg",
     "architect":"https://i.ibb.co/0hmt65G/New-Project-1.jpg"
     
   },
@@ -68,7 +68,7 @@
     "year_built": 2000,
     "hoa_fee": "$50/month",
     "nearby_amenities": ["parks", "shopping centers", "schools"],
-    "image_url": "https://example.com/images/townhouse.jpg",
+    "image_url": "https://i.ibb.co/gDMfG1s/New-Project-2.jpg",
     "architect":"https://i.ibb.co/JKWLnvm/New-Project-2.jpg"
   },
   {
@@ -89,7 +89,7 @@
     "facilities": ["common areas", "meal services", "medical assistance"],
     "level_of_care": "Independent living, assisted living, and memory care options available",
     "amenities": ["swimming pool", "fitness center", "library"],
-    "image_url": "https://example.com/images/senior_living_community.jpg",
+    "image_url": "https://i.ibb.co/F402XYD/New-Project-3.jpg",
     "architect":"https://i.ibb.co/CMHT25H/New-Project-3.jpg"
   },
   {
@@ -110,7 +110,7 @@
     "facilities": ["study area", "fitness center", "laundry room"],
     "lease_terms": "Individual leases, roommate matching available",
     "security_features": ["controlled access", "security cameras"],
-    "image_url": "https://example.com/images/student_housing.jpg",
+    "image_url": "https://i.ibb.co/DbwHH9P/New-Project-4.jpg",
     "architect":"https://i.ibb.co/Gk7GXWq/New-Project-4.jpg"
   },
   {
@@ -131,7 +131,7 @@
     "facilities": ["deck", "fireplace", "BBQ area"],
     "available_dates": ["May 1 - September 30"],
     "minimum_stay": "2 nights",
-    "image_url": "https://example.com/images/vacation_rental.jpg",
+    "image_url": "https://i.ibb.co/JK8Hg6p/New-Project-5.jpg",
     "architect":"https://i.ibb.co/mR9v97h/New-Project-5.jpg"
   },
   {
@@ -153,7 +153,7 @@
     "year_built": 1995,
     "school_district": "Suburbia School District",
     "nearby_attractions": ["parks", "shopping malls", "restaurants"],
-    "image_url": "https://example.com/images/suburban_home.jpg",
+    "image_url": "https://i.ibb.co/0y8HF4f/New-Project-6.jpg",
     "architect":"https://i.ibb.co/kg8HDpS/New-Project-6.jpg"
   },
   {
@@ -177,7 +177,7 @@
       "physical therapy",
       "memory care"
     ],
-    "image_url": "https://example.com/images/senior_living_residence.jpg",
+    "image_url": "https://i.ibb.co/wdQwzBp/New-Project-7.jpg",
     "architect":"https://i.ibb.co/Y7qspZF/New-Project-7.jpg"
   },
   {
@@ -198,7 +198,7 @@
     "facilities": ["open floor plan", "roof deck", "fitness center"],
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "Flexible lease options available",
-    "image_url": "https://example.com/images/downtown_loft_apartment.jpg",
+    "image_url": "https://i.ibb.co/6txrj8s/New-Project-8.jpg",
     "architect":"https://i.ibb.co/s5bY8xC/New-Project-8.jpg"
   }
 ]

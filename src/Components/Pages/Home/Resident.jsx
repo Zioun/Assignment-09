@@ -4,16 +4,16 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const Resident = ({resident}) => {
-    const {id, estate_title, status, area, description, price, segment_name, location} = resident;
+    const {id, estate_title, status, area, description, price, segment_name, location,image_url} = resident;
     const desc = description.length > 80 ? description.slice(0, 80) : description;
   return (
       <div className="col-span-4">
         <div className="bg-white shadow-md rounded overflow-hidden ">
           <div
-            className="hero-overlay overflow-hidden bg-opacity-60 h-[225px]"
+            className="hero-overlay overflow-hidden bg-opacity-60 h-[225px] bg-cover"
             style={{
               backgroundImage:
-                "url(https://i.ibb.co/v30nY3z/decor-7-525x328.jpg)",
+                `url(${image_url})`,
             }}
           >
             <div className="hero-overlay bg-opacity-10">
@@ -25,7 +25,7 @@ const Resident = ({resident}) => {
                 </div>
                 <div className="flex gap-5">
                   <h1 className="bg-[#A62F03] text-white px-3 rounded">
-                    Fore {status}
+                    For <span className="capitalize">{status}</span>
                   </h1>
                 </div>
               </div>
