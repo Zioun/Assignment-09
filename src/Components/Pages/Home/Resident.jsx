@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Resident = ({resident}) => {
     const {id, estate_title, status, area, description, price, segment_name, location} = resident;
-    const desc = description.length > 90 ? description.slice(0, 90) : description;
+    const desc = description.length > 80 ? description.slice(0, 80) : description;
   return (
       <div className="col-span-4">
         <div className="bg-white shadow-md rounded overflow-hidden ">
@@ -53,7 +53,7 @@ const Resident = ({resident}) => {
               
             </div>
             <div>
-              <Link to={`/resident/details/${id}`}><button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">
+              <Link to={`/details/${id}`}><button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">
                 Details
               </button></Link>
               <hr className="mb-3" />

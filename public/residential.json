@@ -1,9 +1,10 @@
 [
   {
     "estate_title": "Modern Single-Family Home",
+    "architect_design": "The modern single-family home design embodies sleek simplicity and functional elegance. Its clean lines and minimalist aesthetic are complemented by large windows, allowing abundant natural light to flood the interior spaces. The layout emphasizes open-plan living, seamlessly integrating the kitchen, dining, and living areas for a spacious feel. High ceilings create a sense of airiness while also enhancing the perception of space. Sustainable materials and energy-efficient features are seamlessly integrated, reflecting a commitment to eco-conscious living. Outdoor living spaces, such as a patio or deck, extend the home's footprint, inviting residents to enjoy alfresco relaxation. This design harmonizes contemporary style with practical living needs.",
     "id": "001",
     "segment_name": "Single family homes",
-    "description": "Beautifully designed modern single-family home with spacious rooms and scenic views.",
+    "description": "This modern single-family home epitomizes contemporary elegance with its spacious rooms and captivating scenic views. Expansive windows flood the interior with natural light, highlighting the sleek design and airy ambiance. The open floor plan seamlessly connects the living, dining, and kitchen areas, perfect for both daily living and entertaining. Retreat to the master suite, boasting a luxurious bedroom, spa-like ensuite bathroom, and private balcony overlooking the serene surroundings. Outside, a meticulously landscaped yard provides a tranquil escape, inviting residents to relax and unwind amidst the beauty of nature. This home offers a harmonious blend of modern luxury and breathtaking scenery.",
     "price": "$500,000",
     "status": "sale",
     "area": "2500 sq ft",
@@ -16,18 +17,20 @@
     "facilities": ["living room", "kitchen", "backyard"],
     "year_built": 2018,
     "num_bedrooms": 4,
-    "num_bathrooms": 3.5,
+    "num_bathrooms": 3,
     "garage_capacity": 2,
     "lot_size": "0.3 acres",
     "hoa_fee": "$100/month",
     "school_district": "Anytown School District",
-    "image_url": "https://example.com/images/single_family_home.jpg"
+    "image_url": "https://example.com/images/single_family_home.jpg",
+    "architect":"https://i.ibb.co/pzVzygy/New-Project.jpg"
   },
   {
     "estate_title": "Luxury Apartment",
+    "architect_design": "The luxury apartment design exudes sophistication and opulence, blending modern amenities with timeless elegance. Expansive floor-to-ceiling windows offer panoramic views, while exquisite finishes such as marble countertops and hardwood flooring add a touch of refinement. A spacious open-concept layout seamlessly connects living, dining, and kitchen areas, ideal for both entertaining and everyday living. State-of-the-art appliances and smart home technology provide convenience and comfort. Lavish master suites feature indulgent en-suite bathrooms and walk-in closets. Residents enjoy access to exclusive amenities such as a private gym, spa, and rooftop terrace, elevating the living experience to unparalleled heights of luxury and comfort.",
     "id": "002",
     "segment_name": "Apartments",
-    "description": "Luxurious apartment in a prime location with top-notch amenities and stunning city views.",
+    "description": "This luxurious apartment, located in a prime area, offers breathtaking city views and top-notch amenities. Its sleek interiors redefine urban living, providing both style and comfort. Residents can indulge in a range of amenities, including a state-of-the-art fitness center, a serene rooftop terrace, and a sparkling pool, all designed to enhance their lifestyle. With its perfect blend of sophistication and convenience, this apartment is the epitome of modern city living, promising residents an unparalleled experience in the heart of the urban landscape.",
     "price": "$2,500/month",
     "status": "rent",
     "area": "1200 sq ft",
@@ -42,13 +45,16 @@
     "building_amenities": ["rooftop terrace", "business center", "pet spa"],
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "12-month lease minimum",
-    "image_url": "https://example.com/images/luxury_apartment.jpg"
+    "image_url": "https://example.com/images/luxury_apartment.jpg",
+    "architect":"https://i.ibb.co/0hmt65G/New-Project-1.jpg"
+    
   },
   {
     "estate_title": "Cozy Townhouse",
+    "architect_design": "The cozy townhouse design epitomizes warmth and intimacy, blending charm with practicality. Its facade boasts inviting architectural details, such as a welcoming front porch and quaint landscaping. Inside, the layout maximizes every inch of space, with an open-plan living area that seamlessly flows from the living room to the kitchen and dining space, fostering a sense of togetherness. Thoughtful design elements like built-in storage solutions and multi-functional furniture optimize functionality without compromising on style. Upstairs, snug bedrooms offer peaceful retreats, while a private backyard or patio provides a serene outdoor escape. This design embraces the comforts of home within a charming, community-oriented setting.",
     "id": "003",
     "segment_name": "Townhouses",
-    "description": "Charming townhouse nestled in a quiet neighborhood, perfect for families.",
+    "description": "Tucked away in a serene neighborhood, this charming townhouse beckons families with its peaceful ambiance and cozy atmosphere. Step inside to discover a warm and inviting living space, where natural light pours in through large windows, illuminating the tastefully appointed interiors. The functional layout offers ample room for relaxation and bonding, with spacious living areas ideal for family gatherings and entertaining. A well-equipped kitchen awaits culinary adventures, while comfortable bedrooms provide peaceful retreats for restful nights. Outside, a quaint backyard or garden space offers a private oasis for children to play and parents to unwind. With its tranquil surroundings and family-friendly vibe, this townhouse is the perfect place to call home for those seeking a harmonious blend of comfort and community.",
     "price": "$350,000",
     "status": "sale",
     "area": "1800 sq ft",
@@ -62,13 +68,15 @@
     "year_built": 2000,
     "hoa_fee": "$50/month",
     "nearby_amenities": ["parks", "shopping centers", "schools"],
-    "image_url": "https://example.com/images/townhouse.jpg"
+    "image_url": "https://example.com/images/townhouse.jpg",
+    "architect":"https://i.ibb.co/JKWLnvm/New-Project-2.jpg"
   },
   {
     "estate_title": "Senior Living Community",
+    "architect_design": "The senior living community design prioritizes comfort, accessibility, and community engagement. Architectural elements such as wide hallways, grab bars, and wheelchair accessibility ensure ease of mobility for residents. Thoughtful landscaping and outdoor seating areas provide serene spaces for relaxation and socialization. Inside, the layout is designed with safety and convenience in mind, featuring spacious common areas for social gatherings, activities, and events. Private apartments offer comfortable living spaces with amenities tailored to the needs of seniors, including accessible bathrooms and emergency call systems. Wellness amenities such as fitness centers, walking paths, and therapy rooms promote active lifestyles and overall well-being. This design fosters a vibrant community where seniors can thrive and enjoy their golden years with peace of mind.",
     "id": "004",
     "segment_name": "Senior living communities",
-    "description": "Resort-style senior living community offering a range of amenities and care services.",
+    "description": "Experience resort-style living at its finest in this senior living community, where luxury meets care. With a plethora of amenities and tailored care services, residents can enjoy a vibrant lifestyle tailored to their needs.Indulge in a variety of activities, from fitness classes to cultural events, or simply relax in the lush gardens and serene courtyards. Gourmet dining options, housekeeping services, and transportation assistance ensure convenience and comfort.With dedicated staff providing personalized care and support, residents can embrace each day with confidence and peace of mind. Discover a new chapter of fulfilling living in this upscale senior community, where every moment is enriched with joy and wellness.",
     "price": "$3,000/month",
     "status": "rent",
     "area": "Varies",
@@ -81,13 +89,15 @@
     "facilities": ["common areas", "meal services", "medical assistance"],
     "level_of_care": "Independent living, assisted living, and memory care options available",
     "amenities": ["swimming pool", "fitness center", "library"],
-    "image_url": "https://example.com/images/senior_living_community.jpg"
+    "image_url": "https://example.com/images/senior_living_community.jpg",
+    "architect":"https://i.ibb.co/CMHT25H/New-Project-3.jpg"
   },
   {
     "estate_title": "Stylish Student Housing",
+    "architect_design": "Stylish student housing blends contemporary design with practicality, catering to the needs and preferences of modern students. The exterior showcases a sleek and modern facade, inviting residents into a vibrant community atmosphere. Inside, the layout maximizes space efficiency, with open-concept living areas that encourage social interaction. Each unit is furnished with modern amenities and ergonomic furniture, providing comfort and functionality for studying and relaxation. Shared spaces, such as lounges, study rooms, and recreational areas, offer opportunities for collaboration and leisure activities. Sustainable features and energy-efficient appliances align with eco-conscious student lifestyles. This design creates a dynamic and inspiring environment where students can live, learn, and thrive.",
     "id": "005",
     "segment_name": "Student housing",
-    "description": "Modern and stylish student housing complex conveniently located near campus. Each unit is fully furnished and includes utilities, high-speed internet, and cable TV.",
+    "description": "Conveniently situated near campus, this modern student housing complex offers a stylish and comfortable living environment tailored to the needs of today's students. Each unit comes fully furnished, providing everything students need for a seamless living experience. From cozy beds to functional study areas, every detail is thoughtfully designed to enhance productivity and relaxation. With utilities, high-speed internet, and cable TV included, students can focus on their studies and social life without worrying about additional expenses. The proximity to campus ensures easy access to classes, libraries, and campus amenities, while nearby shops and restaurants add to the convenience.Embrace the vibrant student community and enjoy the perks of modern living in this exceptional housing complex, where comfort, convenience, and style converge to create the ultimate student experience.",
     "price": "$800/month",
     "status": "rent",
     "area": "600 sq ft",
@@ -100,13 +110,15 @@
     "facilities": ["study area", "fitness center", "laundry room"],
     "lease_terms": "Individual leases, roommate matching available",
     "security_features": ["controlled access", "security cameras"],
-    "image_url": "https://example.com/images/student_housing.jpg"
+    "image_url": "https://example.com/images/student_housing.jpg",
+    "architect":"https://i.ibb.co/Gk7GXWq/New-Project-4.jpg"
   },
   {
     "estate_title": "Scenic Vacation Rental",
+    "architect_design": "The scenic vacation rental is a haven for relaxation and rejuvenation, nestled in a breathtaking natural setting. Its exterior reflects the surrounding beauty, with architecture that seamlessly blends into the landscape. Inside, the design emphasizes comfort and luxury, with spacious living areas adorned with stylish furnishings and tasteful decor. Floor-to-ceiling windows frame panoramic views, allowing guests to immerse themselves in the splendor of the outdoors. Bedrooms are inviting retreats, offering plush bedding and serene ambiance for restful nights. Outdoor amenities such as a deck, patio, or hot tub provide opportunities for alfresco dining and stargazing. This rental offers a serene escape where guests can unwind and create lasting memories amidst nature's grandeur.",
     "id": "006",
     "segment_name": "Vacation rentals",
-    "description": "Charming vacation rental with breathtaking views and easy access to outdoor activities. This rental features 2 bedrooms, 1 bathroom, a fully equipped kitchen, and a spacious deck overlooking the lake.",
+    "description": "Nestled amidst stunning natural scenery, this charming vacation rental offers an idyllic retreat for nature lovers and outdoor enthusiasts alike. Boasting breathtaking views and easy access to a plethora of outdoor activities, it promises an unforgettable getaway. The rental features two cozy bedrooms, ensuring ample space for relaxation after a day of exploration. A well-appointed bathroom and a fully equipped kitchen provide all the comforts of home, allowing guests to unwind and prepare delicious meals with ease. However, the true highlight of this rental is its spacious deck overlooking the tranquil lake. Here, guests can sip their morning coffee, bask in the beauty of the sunset, or simply soak in the serenity of the surroundings. Whether it's fishing, hiking, or simply enjoying the peaceful ambiance of nature, this vacation rental offers the perfect escape for those seeking tranquility and adventure in equal measure.",
     "price": "$200/night",
     "status": "rent",
     "area": "1000 sq ft",
@@ -119,13 +131,15 @@
     "facilities": ["deck", "fireplace", "BBQ area"],
     "available_dates": ["May 1 - September 30"],
     "minimum_stay": "2 nights",
-    "image_url": "https://example.com/images/vacation_rental.jpg"
+    "image_url": "https://example.com/images/vacation_rental.jpg",
+    "architect":"https://i.ibb.co/mR9v97h/New-Project-5.jpg"
   },
   {
     "estate_title": "Family-Friendly Suburban Home",
+    "architect_design": "The family-friendly suburban home is a sanctuary of comfort and convenience, thoughtfully designed to accommodate the needs of modern family life. Its welcoming exterior features a charming facade, complemented by a well-maintained yard and perhaps a front porch for relaxing evenings. Inside, the layout prioritizes spaciousness and functionality, with an open-plan design that seamlessly connects the living, dining, and kitchen areas, fostering a sense of togetherness. Bedrooms are cozy retreats, providing ample space for rest and relaxation. Family-centric features such as a dedicated playroom, study area, or backyard playground ensure entertainment and enrichment for children. Outdoor spaces include a backyard patio or deck, perfect for family gatherings and outdoor activities. This home offers a warm and inviting environment where families can create cherished memories together.",
     "id": "007",
     "segment_name": "Single family homes",
-    "description": "Spacious suburban home perfect for families, with a large backyard and nearby parks. This home features 4 bedrooms, 2.5 bathrooms, a gourmet kitchen, and a finished basement.",
+    "description": "Ideal for families seeking comfort and convenience, this spacious suburban home offers a sanctuary of tranquility and ample space for every member to thrive. Boasting four bedrooms and 2.5 bathrooms, there's room for everyone to enjoy privacy and relaxation. The heart of the home lies in its gourmet kitchen, where culinary creations come to life amidst sleek appliances and abundant counter space. From casual breakfasts to elaborate dinners, this kitchen is a chef's dream. Entertainment awaits in the finished basement, providing a versatile space for movie nights, playtime, or hobbies. Meanwhile, the expansive backyard beckons for outdoor enjoyment, with plenty of room for children to play and adults to unwind. Located near parks, families can easily access green spaces for picnics, sports, and leisurely strolls. With its blend of comfort, functionality, and proximity to outdoor amenities, this suburban gem offers the perfect backdrop for creating cherished family memories.",
     "price": "$450,000",
     "status": "sale",
     "area": "2800 sq ft",
@@ -139,13 +153,15 @@
     "year_built": 1995,
     "school_district": "Suburbia School District",
     "nearby_attractions": ["parks", "shopping malls", "restaurants"],
-    "image_url": "https://example.com/images/suburban_home.jpg"
+    "image_url": "https://example.com/images/suburban_home.jpg",
+    "architect":"https://i.ibb.co/kg8HDpS/New-Project-6.jpg"
   },
   {
     "estate_title": "Elegant Senior Living Residence",
+    "architect_design": "The elegant senior living residence is a haven of sophistication and comfort, meticulously crafted to cater to the discerning tastes of its residents. Its exterior boasts timeless architectural details and well-manicured landscaping, creating an inviting ambiance. Inside, the design exudes luxury and refinement, with spacious common areas adorned with upscale furnishings, tasteful artwork, and soft lighting. Residents' suites are elegantly appointed, featuring high-end finishes, plush carpets, and serene color palettes. Thoughtfully curated amenities such as gourmet dining options, a spa and wellness center, and a library offer opportunities for leisure and socialization. Outdoor spaces, including gardens and walking paths, provide tranquil retreats for relaxation and contemplation. This residence epitomizes sophistication and comfort, providing seniors with a lifestyle of luxury and fulfillment.",
     "id": "008",
     "segment_name": "Senior living communities",
-    "description": "Elegant senior living residence offering luxurious amenities and personalized care services. Residents enjoy spacious suites, gourmet dining, and a vibrant social calendar.",
+    "description": "Welcome to an elegant senior living residence where luxury meets personalized care. Residents indulge in spacious suites adorned with upscale finishes, providing a serene retreat for relaxation. Gourmet dining experiences await, where culinary delights tantalize the taste buds and create memorable dining moments. But it's not just about the luxurious amenities; it's also about the vibrant community atmosphere. With a bustling social calendar, residents engage in enriching activities, from art classes to cultural outings, fostering new friendships and meaningful connections. Moreover, dedicated staff provide personalized care services, ensuring that each resident's unique needs are met with compassion and expertise. Whether it's assistance with daily activities or specialized medical care, residents can rest assured knowing they're in capable hands. Discover a life of elegance, comfort, and camaraderie in this exceptional senior living residence, where every moment is infused with warmth and vitality.",
     "price": "$4,500/month",
     "status": "rent",
     "area": "Varies",
@@ -161,13 +177,15 @@
       "physical therapy",
       "memory care"
     ],
-    "image_url": "https://example.com/images/senior_living_residence.jpg"
+    "image_url": "https://example.com/images/senior_living_residence.jpg",
+    "architect":"https://i.ibb.co/Y7qspZF/New-Project-7.jpg"
   },
   {
     "estate_title": "Downtown Loft Apartment",
+    "architect_design": "The downtown loft apartment epitomizes urban sophistication and contemporary living, nestled in the heart of the city's vibrant energy. Its industrial-chic exterior hints at the loft's historic charm, with exposed brick walls and large windows offering panoramic views of the bustling cityscape. Inside, the open-concept layout features soaring ceilings and polished concrete floors, creating a spacious and airy atmosphere. Sleek modern finishes, such as stainless steel appliances and granite countertops, adorn the kitchen, while the living area boasts stylish furnishings and avant-garde artwork. A mezzanine level adds architectural interest and extra living space. Residents enjoy access to amenities like a rooftop terrace or fitness center, providing opportunities for relaxation and recreation amidst the urban hustle and bustle. This loft apartment offers a cosmopolitan lifestyle at the intersection of luxury and convenience.",
     "id": "009",
     "segment_name": "Apartments",
-    "description": "Chic loft apartment in the heart of downtown, featuring exposed brick walls and modern finishes. This loft includes an open floor plan, floor-to-ceiling windows, and access to a rooftop terrace.",
+    "description": "Welcome to the epitome of urban living - a chic loft apartment nestled in the pulsating heart of downtown. Step inside and be captivated by the industrial charm of exposed brick walls seamlessly blending with modern finishes. The open floor plan invites creativity and functionality, offering endless possibilities for personalization and entertainment. Floor-to-ceiling windows flood the space with natural light, illuminating the sleek interiors and accentuating the loft's contemporary allure. Venture outside onto the rooftop terrace, where panoramic views of the city skyline await. Whether it's hosting gatherings under the stars or simply unwinding after a busy day, this outdoor oasis provides a coveted retreat from the hustle and bustle below. Experience the urban lifestyle redefined in this stylish loft apartment, where historic charm meets contemporary luxury in the vibrant heart of downtown.",
     "price": "$3,000/month",
     "status": "rent",
     "area": "1500 sq ft",
@@ -180,6 +198,7 @@
     "facilities": ["open floor plan", "roof deck", "fitness center"],
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "Flexible lease options available",
-    "image_url": "https://example.com/images/downtown_loft_apartment.jpg"
+    "image_url": "https://example.com/images/downtown_loft_apartment.jpg",
+    "architect":"https://i.ibb.co/s5bY8xC/New-Project-8.jpg"
   }
 ]
