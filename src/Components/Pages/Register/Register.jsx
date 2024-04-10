@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -11,16 +12,18 @@ const Register = () => {
     const password = form.get("password");
     console.log(email, password);
     console.log(createUser);
-    createUser(email, password)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    toast.promise(
+      createUser(email, password),
+      {
+        loading: 'Creating account...',
+        success: <b>Account create successfullly!</b>,
+        error: <b>Already have an account.</b>
+      }
+    );
   };
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
+      <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[460px]">
           <div className="col-span-6 rounded-2xl">

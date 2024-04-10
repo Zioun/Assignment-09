@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 
 const Details = () => {
   const carts = useLoaderData();
@@ -40,6 +41,7 @@ const Details = () => {
   } = cart;
   return (
     <div className="bg-[#F8F8F8]">
+      <ScrollRestoration />
       <div className="container m-auto">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-7 bg-white rounded my-20 shadow-md">
