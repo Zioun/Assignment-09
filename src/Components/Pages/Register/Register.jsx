@@ -2,24 +2,40 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  console.log(createUser.user)
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
+    const name = form.get("name");
     const email = form.get("email");
+    const image = form.get("image");
     const password = form.get("password");
-    console.log(email, password);
-    console.log(createUser);
-    toast.promise(
-      createUser(email, password),
-      {
-        loading: 'Creating account...',
-        success: <b>Account create successfullly!</b>,
-        error: <b>Already have an account.</b>
-      }
-    );
+    if(name == "" || email == "" || password == "" || image == ""){
+      toast.error("Input field must not be empty.");
+    }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+      toast.error("Please provide an valid Email.");
+    }else if(password.length < 6){
+      toast.error("Password must be at least 6 characters.");
+    }else{
+      createUser(email, password)
+      .then((result)=>{
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: image
+        }).then(() => {
+        }).catch((error) => {
+        });
+        toast.success("Account created successfully.")
+        console.log(result.user)
+      })
+      .catch((error)=>{
+        toast.error("An account already exists!")
+      })
+    }
   };
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
@@ -44,21 +60,25 @@ const Register = () => {
                     className="border pl-4 outline-none rounded h-[45px] w-full"
                     type="text"
                     placeholder="Name"
+                    name="name"
                   />
                   <input
                     className="border pl-4 outline-none rounded h-[45px] w-full"
                     type="text"
                     placeholder="Email"
+                    name="email"
                   />
                   <input
                     className="border pl-4 outline-none rounded h-[45px] w-full"
                     type="text"
                     placeholder="Image URL"
+                    name="image"
                   />
                   <input
                     className="border pl-4 outline-none rounded h-[45px] w-full"
-                    type="text"
+                    type="password"
                     placeholder="Password"
+                    name="password"
                   />
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
                     Registion

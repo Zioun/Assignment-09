@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Login = () => {
@@ -10,18 +11,27 @@ const Login = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get("email");
         const password = form.get("password")
-        console.log(email,password)
-        console.log(userLogin)
-        userLogin(email,password)
-        .then((result)=>{
-            console.log(result)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
+        if(email == "" || password == ""){
+          toast.error("Input field must not be empty.");
+        }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+          toast.error("Please provide an valid Email.");
+        }else if(password.length < 6){
+          toast.error("Password must be at least 6 characters.");
+        }else{
+          userLogin(email,password)
+          .then((result)=>{
+            toast.success("Account successfully login.");
+            e.target.reset();
+          })
+          .catch((error) => {
+            toast.error("Incorrect email or password.");
+          })
+        }
+        
     }
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
+      <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[550px]">
           <div className="col-span-6 rounded-2xl">
@@ -42,11 +52,13 @@ const Login = () => {
                     className="border pl-4 outline-none rounded h-[45px] w-full"
                     type="text"
                     placeholder="Email"
+                    name="email"
                   />
                   <input
                     className="border pl-4 outline-none rounded h-[45px] w-full"
-                    type="text"
+                    type="password"
                     placeholder="Password"
+                    name="password"
                   />
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
                     Login

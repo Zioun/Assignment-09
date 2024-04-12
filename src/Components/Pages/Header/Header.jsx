@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { AuthContext } from "../../Providers/AuthProvider";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Header = () => {
+  const {user, logout} = useContext(AuthContext);
+  const handleLogout = () => {
+    logout()
+    .then((result) => {
+      toast.success("Account successfully logout.");
+    })
+    .catch((error) => {
+      toast.error("Something was wrong.");
+    })
+  }
   const links = (
     <>
       <li>
@@ -72,24 +84,29 @@ const Header = () => {
             </div>
             <div className="">
             </div>
-            <div className="dropdown dropdown-end">
+            <div className="dropdown dropdown-end tooltip tooltip-bottom" data-tip={user && user.displayName}>
               <div
                 tabIndex={0}
                 role="button"
                 className="btn btn-ghost btn-circle avatar"
               >
-                <div className="w-10 rounded-full">
-                  <div className="ml-[0px] mt-[0px]">
-                    <span className="text-[40px] text-[#A62F03] cursor-pointer">
-                      <CgProfile />
-                    </span>
-                  </div>
-                  
-                  {/* <img
-                    alt="Tailwind CSS Navbar component"
-                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                  /> */}
-                </div>
+                {
+                  user && user ? (
+                    <img
+                      alt="User Profile"
+                      src={user.photoURL}
+                      className="rounded-full"
+                    />
+                    ) : (
+                    <div className="w-10 rounded-full">
+                        <div className="ml-0 mt-0">
+                            <span className="text-[40px] text-[#A62F03] cursor-pointer">
+                                <CgProfile />
+                            </span>
+                        </div>
+                    </div>
+                  )
+                }  
               </div>
               <ul
                 tabIndex={0}
@@ -106,7 +123,9 @@ const Header = () => {
                 </li>
                 <Link to="/login">
                 <li>
-                  <a>Login</a>
+                  {
+                    user && user ? <a onClick={handleLogout}>Logout</a> : <a>Login</a>
+                  }
                 </li>
                 </Link>
               </ul>
