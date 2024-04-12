@@ -31,6 +31,7 @@ const Register = () => {
         });
         toast.success("Account created successfully.")
         console.log(result.user)
+        e.target.reset();
       })
       .catch((error)=>{
         toast.error("An account already exists!")

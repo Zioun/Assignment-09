@@ -90,7 +90,8 @@
     "level_of_care": "Independent living, assisted living, and memory care options available",
     "amenities": ["swimming pool", "fitness center", "library"],
     "image_url": "https://i.ibb.co/F402XYD/New-Project-3.jpg",
-    "architect":"https://i.ibb.co/CMHT25H/New-Project-3.jpg"
+    "architect":"https://i.ibb.co/CMHT25H/New-Project-3.jpg",
+    "slide": "https://i.ibb.co/d2msr8b/New-Project-3.jpg"
   },
   {
     "estate_title": "Stylish Student Housing",
@@ -132,7 +133,8 @@
     "available_dates": ["May 1 - September 30"],
     "minimum_stay": "2 nights",
     "image_url": "https://i.ibb.co/JK8Hg6p/New-Project-5.jpg",
-    "architect":"https://i.ibb.co/mR9v97h/New-Project-5.jpg"
+    "architect":"https://i.ibb.co/mR9v97h/New-Project-5.jpg",
+    "slide": "https://i.ibb.co/4sjvP0w/cart-6.jpg"
   },
   {
     "estate_title": "Family-Friendly Suburban Home",
@@ -199,6 +201,7 @@
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "Flexible lease options available",
     "image_url": "https://i.ibb.co/6txrj8s/New-Project-8.jpg",
-    "architect":"https://i.ibb.co/s5bY8xC/New-Project-8.jpg"
+    "architect":"https://i.ibb.co/s5bY8xC/New-Project-8.jpg",
+    "slide": "https://i.ibb.co/VTJ1XNC/cart-9.jpg"
   }
 ]

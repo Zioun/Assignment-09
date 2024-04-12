@@ -58,6 +58,10 @@ const Home = () => {
             </div>
             <div className='bg-[#FBFBFB] py-10'>
                 <div className='container m-auto max-w-[1130px]'>
+                    <div className='text-center'>
+                        <h1 className='text-[40px] font-semibold'>Our new advertisements</h1>
+                        <p className='max-w-[700px] text-[16px] m-auto mb-10 mt-3 text-gray-400 font-normal'>A list of villas, apartments, country houses, commercial premises, and prestigious properties currently available. Various turnkey solutions.</p>
+                    </div>
                     <div className='grid grid-cols-12 gap-10'>
                         {
                             resident.map(resident => <Resident key={resident.id} resident={resident}></Resident>)

@@ -5,6 +5,8 @@ import Root from "../Layouts/Root/Root";
 import Login from './../Pages/Login/Login';
 import Register from "../Pages/Register/Register";
 import Details from "../Pages/Details/Details";
+import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
+import Profile from "../Pages/Profile/Profile";
 
 const Router = createBrowserRouter([
   {
@@ -25,8 +27,13 @@ const Router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: "details/:id",
-        element: <Details></Details>,
+        path: "/details/:id",
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
+        loader: () => fetch("../residential.json")
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>,
         loader: () => fetch("../residential.json")
       },
     ],
