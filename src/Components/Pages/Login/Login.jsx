@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 const Login = () => {
-    const {userLogin, googleLogin} = useContext(AuthContext);
+    const {userLogin, googleLogin, gitHubLogin} = useContext(AuthContext);
     const handleLogin = (e) => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -32,6 +32,15 @@ const Login = () => {
     const handleGoogleLogin = () => {
       console.log("hello")
       googleLogin()
+      .then((result) => {
+        toast.success("Account successfully login.");
+      })
+      .catch((error) => {
+        toast.success("Something was wrong.");
+      })
+    }
+    const handleGitHubLogin = () => {
+      gitHubLogin()
       .then((result) => {
         toast.success("Account successfully login.");
       })
@@ -79,7 +88,7 @@ const Login = () => {
                         <img className="h-5" src="https://i.ibb.co/ZRrrfwg/google-icon-2048x2048-czn3g8x8.png" alt="google" />
                         <h1>Google</h1>
                     </div>
-                    <div className="w-full gap-3 h-[45px] border bg-white rounded flex justify-center items-center cursor-pointer">
+                    <div onClick={handleGitHubLogin} className="w-full gap-3 h-[45px] border bg-white rounded flex justify-center items-center cursor-pointer">
                         <img className="h-5" src="https://i.ibb.co/ScG58Zy/github-logo-7880-D80-B8-D-seeklogo-com.png" alt="github" />
                         <h1>Github</h1>
                     </div>
