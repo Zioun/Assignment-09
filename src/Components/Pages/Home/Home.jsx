@@ -3,11 +3,15 @@ import Slider from './Slider';
 import { FaRegChartBar } from "react-icons/fa";
 import {useLoaderData} from "react-router-dom"
 import Resident from './Resident';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     const resident = useLoaderData();
     return (
         <div>
+            <Helmet>
+                <title>Residence-Home</title>
+            </Helmet>
             <Slider></Slider>
             <div className='container m-auto grid grid-cols-10 py-10 bg-[#FFFFFF] gap-5 max-w-[1400px]'>
                 <div className='max-w-[300px] col-span-2 text-center shadow-md p-[20px] rounded'>

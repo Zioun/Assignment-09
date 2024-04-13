@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
     const {userLogin, googleLogin, gitHubLogin} = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log("statelocation",location)
+
     const handleLogin = (e) => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -22,6 +30,7 @@ const Login = () => {
           .then((result)=>{
             toast.success("Account successfully login.");
             e.target.reset();
+            navigate(location.state ? location.state : "/")
           })
           .catch((error) => {
             toast.error("Incorrect email or password.");
@@ -34,6 +43,7 @@ const Login = () => {
       googleLogin()
       .then((result) => {
         toast.success("Account successfully login.");
+        navigate(location.state ? location.state : "/")
       })
       .catch((error) => {
         toast.error("Something was wrong.");
@@ -43,6 +53,7 @@ const Login = () => {
       gitHubLogin()
       .then((result) => {
         toast.success("Account successfully login.");
+        navigate(location.state ? location.state : "/")
       })
       .catch((error) => {
         toast.error("Something was wrong.");
@@ -50,6 +61,7 @@ const Login = () => {
     }
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
+      <Helmet><title>Residence-Login</title></Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[550px]">
@@ -73,12 +85,19 @@ const Login = () => {
                     placeholder="Email"
                     name="email"
                   />
-                  <input
-                    className="border pl-4 outline-none rounded h-[45px] w-full"
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                  />
+                  <div className="flex items-center justify-center relative">
+                    <input
+                      className="border pl-4 outline-none rounded h-[45px] w-full"
+                      type={showPassword ? "text" : "password"}
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <div onClick={() => setShowPassword(!showPassword)} className="text-[20px] absolute right-5 cursor-pointer">
+                      {showPassword ? <span ><FaRegEye /></span> : <span><FaRegEyeSlash /></span>}
+                      
+                      
+                    </div>
+                  </div>
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
                     Login
                   </button>

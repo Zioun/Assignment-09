@@ -1,11 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import { updateProfile } from "firebase/auth";
+import { FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
   
   const is_valid_image_url = async (url) => {
     const supportedFormats = ['.png', '.jpg', '.jpeg', '.gif', '.svg'];
@@ -50,6 +54,9 @@ const Register = () => {
 
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
+      <Helmet>
+        <title>Residence-Register</title>
+      </Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[460px]">
@@ -85,12 +92,19 @@ const Register = () => {
                     placeholder="Image URL"
                     name="image"
                   />
-                  <input
-                    className="border pl-4 outline-none rounded h-[45px] w-full"
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                  />
+                  <div className="flex items-center justify-center relative">
+                    <input
+                      className="border pl-4 outline-none rounded h-[45px] w-full"
+                      type={showPassword ? "text" : "password"}
+                      placeholder="Password"
+                      name="password"
+                    />
+                    <div onClick={() => setShowPassword(!showPassword)} className="text-[20px] absolute right-5 cursor-pointer">
+                      {showPassword ? <span ><FaRegEye /></span> : <span><FaRegEyeSlash /></span>}
+                      
+                      
+                    </div>
+                  </div>
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
                     Registration
                   </button>

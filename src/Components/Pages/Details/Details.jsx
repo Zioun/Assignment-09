@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import { ScrollRestoration } from "react-router-dom";
@@ -43,6 +44,9 @@ const Details = () => {
   return (
     <>
       <div className="bg-[#F8F8F8]">
+      <Helmet>
+          <title>Residence-Details-{id}</title>
+        </Helmet>
         <ScrollRestoration />
         <div className="container m-auto">
           <div className="grid grid-cols-12 gap-5">

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import toast, { Toaster } from 'react-hot-toast';
+import { Helmet } from 'react-helmet-async';
 
 class Profile extends Component {
   static contextType = AuthContext;
@@ -49,6 +50,9 @@ class Profile extends Component {
 
     return (
       <div className="flex justify-center mt-10 px-10 mb-20">
+        <Helmet>
+          <title>Residence-Profile</title>
+        </Helmet>
         <Toaster position="top-center" reverseOrder={false} />
         <div className="max-w-[1050px]">
           <div className="grid grid-cols-12 h-[440px]">
