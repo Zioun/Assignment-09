@@ -40,7 +40,7 @@ const Header = () => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-      <div className="px-10 py-5">
+      <div className="px-10 py-3">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -94,7 +94,7 @@ const Header = () => {
               </div>
               <div className=""></div>
               <div
-                className="dropdown dropdown-end tooltip tooltip-bottom"
+                className="dropdown dropdown-end tooltip tooltip-bottom z-10"
                 data-tip={user && user.displayName}
               >
                 <div

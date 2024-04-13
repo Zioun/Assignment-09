@@ -52,12 +52,20 @@ class Profile extends Component {
         <Toaster position="top-center" reverseOrder={false} />
         <div className="max-w-[1050px]">
           <div className="grid grid-cols-12 h-[440px]">
-            <div className="col-span-6 rounded-2xl">
+            <div className="col-span-6 rounded-2xl relative">
               <img
                 className="rounded-l-2xl h-[440px]"
                 src={this.state.user.photoURL}
                 alt=""
               />
+              <div className='absolute bottom-0 flex justify-left pl-5 bg-[#a62e03b7] w-full text-white py-2 font-bold rounded-bl-xl'>
+                <div className=''>
+                  <h1>Name : {this.state.user.displayName}</h1>
+                  {
+                    this.state.user.email && <h2>Email : {this.state.user.email}</h2>
+                  }
+                </div>
+              </div>
             </div>
             <div className="col-span-6 border rounded-r-2xl px-5 pt-[90px]">
               <form onSubmit={this.handleUpdate} className="">
