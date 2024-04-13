@@ -122,12 +122,13 @@ const Header = () => {
                   tabIndex={0}
                   className="mt-3 z-[3] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-[#A62F03] font-semibold border"
                 >
+                  <Link to="/profile">
                   <li>
                     <p className="flex justify-between">
-                      <Link to="/profile"><span>Profile</span></Link>
+                      <span>Profile</span>
                     </p>
                   </li>
-
+                  </Link>
                   <li>
                     <Link to="/login">
                       {user && user ? (
