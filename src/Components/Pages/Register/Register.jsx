@@ -6,16 +6,25 @@ import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
-  console.log(createUser.user)
-  const handleRegister = (e) => {
+  
+  const is_valid_image_url = async (url) => {
+    const supportedFormats = ['.png', '.jpg', '.jpeg', '.gif', '.svg'];
+    const isValidFormat = supportedFormats.some(format => url.toLowerCase().endsWith(format));
+    return isValidFormat;
+  };
+
+  const handleRegister = async (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
     const email = form.get("email");
     const image = form.get("image");
     const password = form.get("password");
-    if(name == "" || email == "" || password == "" || image == ""){
+    const isValidImage = await is_valid_image_url(image);
+    if(name === "" || email === "" || password === "" || image === ""){
       toast.error("Input field must not be empty.");
+    } else if (!isValidImage) {
+      toast.error('Image must be .png, .jpg, .gif, .svg');
     }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
       toast.error("Please provide an valid Email.");
     }else if(password.length < 6){
@@ -38,6 +47,7 @@ const Register = () => {
       })
     }
   };
+
   return (
     <div className="flex justify-center mt-10 px-10 mb-20">
       <Toaster position="top-center" reverseOrder={false}/>
@@ -82,7 +92,7 @@ const Register = () => {
                     name="password"
                   />
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
-                    Registion
+                    Registration
                   </button>
                   <h1 className="text-[#727272] mt-5">Already Have An Account ? <Link to="/login"><span className="font-bold text-[#A62F03]">Login</span></Link></h1>
                 </div>

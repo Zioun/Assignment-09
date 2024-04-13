@@ -5,8 +5,8 @@ import Root from "../Layouts/Root/Root";
 import Login from './../Pages/Login/Login';
 import Register from "../Pages/Register/Register";
 import Details from "../Pages/Details/Details";
-import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 import Profile from "../Pages/Profile/Profile";
+import PrivateRoute from './PrivateRoute';
 
 const Router = createBrowserRouter([
   {

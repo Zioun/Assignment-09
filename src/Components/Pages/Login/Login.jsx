@@ -36,7 +36,7 @@ const Login = () => {
         toast.success("Account successfully login.");
       })
       .catch((error) => {
-        toast.success("Something was wrong.");
+        toast.error("Something was wrong.");
       })
     }
     const handleGitHubLogin = () => {
@@ -45,7 +45,7 @@ const Login = () => {
         toast.success("Account successfully login.");
       })
       .catch((error) => {
-        toast.success("Something was wrong.");
+        toast.error("Something was wrong.");
       })
     }
   return (
