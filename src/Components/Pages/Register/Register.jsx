@@ -60,21 +60,21 @@ const Register = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="flex justify-center mt-10 px-10 mb-20">
+    <div data-aos="zoom-in-up" className="flex justify-center mt-10 px-2 md:mb-20 mb-10">
       <Helmet>
         <title>Residence-Register</title>
       </Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
-        <div className="grid grid-cols-12 h-[460px]">
-          <div className="col-span-6 rounded-2xl">
+        <div className="grid grid-cols-12 md:h-[550px] h-[460px]">
+          <div className="col-span-6 rounded-2xl hidden w-full md:block">
             <img
               className="rounded-l-2xl h-full"
               src="https://i.ibb.co/NrtzjfX/home-section.jpg"
               alt=""
             />
           </div>
-          <div className="col-span-6 border rounded-r-2xl px-5 pt-[30px]">
+          <div className="col-span-12 md:col-span-6 border rounded-2xl md:rounded-r-2xl px-5 pt-[30px]">
             <form onSubmit={handleRegister} className="">
               <div className="">
                 <div>

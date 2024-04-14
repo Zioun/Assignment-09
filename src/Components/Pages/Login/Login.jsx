@@ -66,19 +66,19 @@ const Login = () => {
       })
     }
   return (
-    <div className="flex justify-center mt-10 px-10 mb-20">
+    <div className="flex justify-center mt-10 px-2 md:mb-20 mb-10">
       <Helmet><title>Residence-Login</title></Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
       <div data-aos="zoom-in-up" className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[550px]">
-          <div className="col-span-6 rounded-2xl">
+          <div className="col-span-12 md:col-span-6 rounded-2xl md:rounded-2xl hidden md:block">
             <img
               className="rounded-l-2xl h-full"
               src="https://i.ibb.co/NrtzjfX/home-section.jpg"
               alt=""
             />
           </div>
-          <div className="col-span-6 border rounded-r-2xl px-5 pt-[90px]">
+          <div className="col-span-12 md:col-span-6 border rounded-2xl md:rounded-2xl px-5 md:pt-[90px] pt-10">
             <form onSubmit={handleLogin} className="">
               <div className="">
                 <div>
@@ -108,7 +108,7 @@ const Login = () => {
                     Login
                   </button>
                   <h1 className="text-center font-bold text-[#727272]">Or</h1>
-                  <div className="px-10 flex gap-3">
+                  <div className="flex flex-col md:flex-row  gap-3">
                     <div onClick={handleGoogleLogin} className="w-full gap-3 h-[45px] border bg-white rounded flex justify-center items-center cursor-pointer">
                         <img className="h-5" src="https://i.ibb.co/ZRrrfwg/google-icon-2048x2048-czn3g8x8.png" alt="google" />
                         <h1>Google</h1>
@@ -118,7 +118,7 @@ const Login = () => {
                         <h1>Github</h1>
                     </div>
                   </div>
-                  <h1 className="text-[#727272] mt-5">Dont’t Have An Account ?  <Link to="/register"><span className="font-bold text-[#A62F03]">Register</span></Link></h1>
+                  <h1 className="text-[#727272] mt-5 mb-5 md:mb-0">Dont’t Have An Account ?  <Link to="/register"><span className="font-bold text-[#A62F03]">Register</span></Link></h1>
                 </div>
               </div>
             </form>

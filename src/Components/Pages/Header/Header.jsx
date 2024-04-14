@@ -44,22 +44,24 @@ const Header = () => {
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="btn btn-ghost lg:hidden p-0"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                <span className="pr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="h-[30px] w-[30px]"
+                    stroke="#A62F03"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </span>
               </div>
               <ul
                 tabIndex={0}
@@ -69,7 +71,11 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex gap-3">
-              <img className="w-[40px] h-[40px] md:w-[51px] md:h-[51px]" src={logo} alt="logo" />
+              <img
+                className="w-[40px] h-[40px] md:w-[51px] md:h-[51px]"
+                src={logo}
+                alt="logo"
+              />
               <div className="font-bold md:text-[22px] leading-5 md:leading-[23px]">
                 <h1 className="text-[#A62F03] tracking-wide">WSP</h1>
                 <h1 className="tracking-wide">Residence</h1>
@@ -121,11 +127,11 @@ const Header = () => {
                   className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-[#A62F03] font-semibold border"
                 >
                   <Link to="/profile">
-                  <li>
-                    <p className="flex justify-between">
-                      <span>Profile</span>
-                    </p>
-                  </li>
+                    <li>
+                      <p className="flex justify-between">
+                        <span>Profile</span>
+                      </p>
+                    </li>
                   </Link>
                   <li>
                     <Link to="/login">
