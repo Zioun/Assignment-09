@@ -5,7 +5,7 @@ import Footer from '../../Pages/Footer/Footer';
 
 const Root = () => {
     return (
-        <div className='font-roboto flex flex-col h-screen overflow-x-hidden'>
+        <div className='font-roboto flex flex-col h-screen'>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>

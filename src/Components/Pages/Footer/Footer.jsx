@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="col-span-3 flex flex-col items-center w-full">
           <h6 className="text-white font-semibold text-[16px] mb-2">WSP RESIDENCE</h6>
           <div className="rounded-full">
-            <img className="p-2 w-[70px]" src="/src/assets/footer-logo.png" alt="" />
+            <img className="p-2 w-[70px]" src="https://i.ibb.co/7Qy73qw/footer-logo.png" alt="" />
           </div>
           <p className="text-[#7A7A7A] text-center">Your gateway to modern living, offering luxury amenities and contemporary design in a prime location.</p>
         </div>
