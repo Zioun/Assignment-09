@@ -52,6 +52,15 @@ const Details = () => {
     AOS.init({ duration: 500 });
     AOS.refresh();
 }, []);
+
+// Create a custom icon using Leaflet's L.Icon class
+const locationIcon = "https://i.ibb.co/FxgTyz7/marker-icon.png";
+const customIcon = new L.Icon({
+  iconUrl: locationIcon, // Path to your icon image
+  iconSize: [25, 41], // Size of the icon
+  iconAnchor: [12, 41], // Anchor point of the icon
+  popupAnchor: [1, -34] // Popup anchor of the icon
+});
   
   return (
     <>
@@ -391,7 +400,7 @@ const Details = () => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
-              <Marker position={coordinates}>
+              <Marker position={coordinates} icon={customIcon}>
                 <Popup>
                   A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>
