@@ -14,6 +14,7 @@
       "state": "USA",
       "zipcode": "12345"
     },
+    "coordinates": [51.505, -0.09],
     "facilities": ["living room", "kitchen", "backyard"],
     "year_built": 2018,
     "num_bedrooms": 4,
@@ -40,6 +41,7 @@
       "state": "USA",
       "zipcode": "54321"
     },
+    "coordinates": [40.7128, -74.0060],
     "facilities": ["living room", "swimming pool", "gym", "24/7 security"],
     "year_built": 2015,
     "building_amenities": ["rooftop terrace", "business center", "pet spa"],
@@ -64,6 +66,7 @@
       "state": "USA",
       "zipcode": "67890"
     },
+    "coordinates": [34.0522, -118.2437],
     "facilities": ["living room", "kitchen", "patio"],
     "year_built": 2000,
     "hoa_fee": "$50/month",
@@ -86,6 +89,7 @@
       "state": "USA",
       "zipcode": "13579"
     },
+    "coordinates": [39.9526, -75.1652],
     "facilities": ["common areas", "meal services", "medical assistance"],
     "level_of_care": "Independent living, assisted living, and memory care options available",
     "amenities": ["swimming pool", "fitness center", "library"],
@@ -108,6 +112,7 @@
       "state": "USA",
       "zipcode": "24680"
     },
+    "coordinates": [37.7749, -122.4194],
     "facilities": ["study area", "fitness center", "laundry room"],
     "lease_terms": "Individual leases, roommate matching available",
     "security_features": ["controlled access", "security cameras"],
@@ -129,6 +134,7 @@
       "state": "USA",
       "zipcode": "97531"
     },
+    "coordinates": [45.4215, -75.6919],
     "facilities": ["deck", "fireplace", "BBQ area"],
     "available_dates": ["May 1 - September 30"],
     "minimum_stay": "2 nights",
@@ -151,6 +157,7 @@
       "state": "USA",
       "zipcode": "98765"
     },
+    "coordinates": [33.6846, -117.8265],
     "facilities": ["living room", "kitchen", "backyard"],
     "year_built": 1995,
     "school_district": "Suburbia School District",
@@ -173,6 +180,7 @@
       "state": "USA",
       "zipcode": "24680"
     },
+    "coordinates": [40.7128, -74.0060],
     "facilities": ["dining hall", "library", "spa", "24/7 nursing care"],
     "medical_services": [
       "medication management",
@@ -197,6 +205,7 @@
       "state": "USA",
       "zipcode": "54321"
     },
+    "coordinates": [34.0522, -118.2437],
     "facilities": ["open floor plan", "roof deck", "fitness center"],
     "pet_policy": "Pets allowed with additional deposit",
     "lease_terms": "Flexible lease options available",

@@ -12,7 +12,7 @@ const ContactUs = () => {
   }, []);
     return (
         <div data-aos="zoom-in-up" className="flex justify-center mt-10 px-10 mb-20">
-        <Helmet><title>Residence-Login</title></Helmet>
+        <Helmet><title>Residence-Contact_Us</title></Helmet>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 h-[750px]">
           <div className="col-span-6 rounded-2xl">

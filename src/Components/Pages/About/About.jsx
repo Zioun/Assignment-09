@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet-async';
 const About = () => {
     useEffect(() => {
         AOS.init({ duration: 500 });
@@ -8,6 +9,7 @@ const About = () => {
     }, []);
     return (
         <div className='container max-w-[1200px] m-auto my-20'>
+            <Helmet><title>Residence-About</title></Helmet>
             <div className='flex flex-col items-center gap-5'>
                 <div data-aos="zoom-in-down" className='text-center'>
                         <h1 className='font-semibold text-[#A62F03]'>WHO WE ARE</h1>

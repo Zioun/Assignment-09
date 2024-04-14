@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ErrorPage = () => {
+    useEffect(() => {
+        AOS.init({ duration: 500 });
+        AOS.refresh();
+    }, []);
     return (
-        <div className='font-roboto flex flex-col h-screen'>
+        <div data-aos="zoom-in-up" className='font-roboto flex flex-col h-screen'>
             <Header></Header>
             <div className='flex justify-center'>
                 <div>

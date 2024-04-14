@@ -11,6 +11,7 @@ import { SlSocialDribbble } from "react-icons/sl";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,14 +22,14 @@ const Footer = () => {
           <div className="rounded-full">
             <img className="p-2 w-[70px]" src="/src/assets/footer-logo.png" alt="" />
           </div>
-          <p className="text-[#7A7A7A] text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae reiciendis, omnis quisquam, minus quibusdam amet dignissimos exercitationem inventore praesentium eos nesciunt odio molestias, saepe ab deleniti nulla ratione id commodi?</p>
+          <p className="text-[#7A7A7A] text-center">Your gateway to modern living, offering luxury amenities and contemporary design in a prime location.</p>
         </div>
         <div className="col-span-3 flex flex-col items-center w-full">
           <h6 className="text-white font-semibold text-[16px] mb-2">Pages</h6>
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Contact Us</a>
-          <a className="link link-hover">Details</a>
-          <a className="link link-hover">Profile</a>
+          <Link to="/about"><p className="link link-hover">About</p></Link>
+          <Link to="/contact-us"><p className="link link-hover">Contact Us</p></Link>
+          <Link to="/details/001"><p className="link link-hover">Details</p></Link>
+          <Link to="/profile"><p className="link link-hover">Profile</p></Link>
         </div>
         <div className="col-span-3 flex flex-col items-center w-full">
           <h6 className="text-white font-semibold text-[16px] mb-2">Contact</h6>
@@ -42,11 +43,11 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <span className="text-[18px]"><MdOutlineEmail /></span>
-            <a className="link link-hover">youremails@gmail.com</a>
+            <a className="link link-hover">wspresidence@gmail.com</a>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-[18px]"><FaSkype /></span>
-            <a className="link link-hover">yourskypeid</a>
+            <a className="link link-hover">wsresidence</a>
           </div>
         </div>
         <div className="col-span-3 flex flex-col items-center w-full">

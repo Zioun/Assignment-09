@@ -6,6 +6,11 @@ import { ScrollRestoration } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+//leaflet
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import "leaflet/dist/leaflet.css";
+import './map.css';
+
 const Details = () => {
   const carts = useLoaderData();
   const { id } = useParams();
@@ -19,6 +24,7 @@ const Details = () => {
     status,
     area,
     location,
+    coordinates,
     facilities,
     year_built,
     num_bedrooms,
@@ -54,7 +60,7 @@ const Details = () => {
           <title>Residence-Details-{id}</title>
         </Helmet>
         <ScrollRestoration />
-        <div className="container m-auto">
+        <div className="container m-auto mb-20">
           <div className="grid grid-cols-12 gap-5">
             <div data-aos="fade-up-right" className="col-span-7 bg-white rounded my-20 shadow-md">
               <div>
@@ -378,6 +384,19 @@ const Details = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="map-container">
+            <MapContainer center={coordinates} zoom={13} style={{ height: "400px", width: "100%" }}>
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={coordinates}>
+                <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
         </div>
       </div>
