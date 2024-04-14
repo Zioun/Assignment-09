@@ -27,9 +27,6 @@ const Header = () => {
         <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <NavLink to="/blog">Blog</NavLink>
-      </li>
-      <li>
         <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
     </>
@@ -40,7 +37,7 @@ const Header = () => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-      <div className="px-10 py-3">
+      <div data-aos="fade-down" className="px-10 py-3 shadow z-10">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -120,7 +117,7 @@ const Header = () => {
                 </div>
                 <ul
                   tabIndex={0}
-                  className="mt-3 z-[3] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-[#A62F03] font-semibold border"
+                  className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-[#A62F03] font-semibold border"
                 >
                   <Link to="/profile">
                   <li>

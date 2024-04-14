@@ -8,6 +8,8 @@ import Details from "../Pages/Details/Details";
 import Profile from "../Pages/Profile/Profile";
 import PrivateRoute from './PrivateRoute';
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import About from "../Pages/About/About";
+import ContactUs from "../Pages/ContactUs/ContactUs";
 
 const Router = createBrowserRouter([
   {
@@ -36,6 +38,16 @@ const Router = createBrowserRouter([
       {
         path: "/profile",
         element: <PrivateRoute><Profile></Profile></PrivateRoute>,
+        loader: () => fetch("../residential.json")
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+        loader: () => fetch("../residential.json")
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs></ContactUs>,
         loader: () => fetch("../residential.json")
       },
     ],

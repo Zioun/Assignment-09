@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Resident = ({resident}) => {
     const {id, estate_title, status, area, description, price, segment_name, location,image_url} = resident;
     const desc = description.length > 80 ? description.slice(0, 80) : description;
+    
   return (
-      <div className="col-span-4">
+      <div data-aos="zoom-in-up" className="col-span-4">
         <div className="bg-white shadow-md rounded overflow-hidden ">
           <div
             className="hero-overlay overflow-hidden bg-opacity-60 h-[225px] bg-cover"

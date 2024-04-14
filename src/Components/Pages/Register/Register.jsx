@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
@@ -6,10 +6,17 @@ import { updateProfile } from "firebase/auth";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+    AOS.refresh();
+}, []);
   
   const is_valid_image_url = async (url) => {
     const supportedFormats = ['.png', '.jpg', '.jpeg', '.gif', '.svg'];
@@ -53,7 +60,7 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center mt-10 px-10 mb-20">
+    <div data-aos="zoom-in-up" className="flex justify-center mt-10 px-10 mb-20">
       <Helmet>
         <title>Residence-Register</title>
       </Helmet>
@@ -63,7 +70,7 @@ const Register = () => {
           <div className="col-span-6 rounded-2xl">
             <img
               className="rounded-l-2xl h-full"
-              src="https://i.ibb.co/0yJxTfZ/couch-980x777.jpg"
+              src="https://i.ibb.co/NrtzjfX/home-section.jpg"
               alt=""
             />
           </div>
@@ -71,7 +78,7 @@ const Register = () => {
             <form onSubmit={handleRegister} className="">
               <div className="">
                 <div>
-                  <h1 className="text-[30px] mb-5">Create Account</h1>
+                  <h1 className="text-[30px] mb-5">Create an Account</h1>
                 </div>
                 <div className="flex flex-col gap-3">
                   <input

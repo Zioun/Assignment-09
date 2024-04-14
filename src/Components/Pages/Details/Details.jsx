@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import { ScrollRestoration } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Details = () => {
   const carts = useLoaderData();
@@ -40,6 +42,10 @@ const Details = () => {
     architect,
     architect_design
   } = cart;
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+    AOS.refresh();
+}, []);
   
   return (
     <>
@@ -50,7 +56,7 @@ const Details = () => {
         <ScrollRestoration />
         <div className="container m-auto">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-7 bg-white rounded my-20 shadow-md">
+            <div data-aos="fade-up-right" className="col-span-7 bg-white rounded my-20 shadow-md">
               <div>
                 <div className="px-5 pt-5 flex justify-between items-center">
                   <div>
@@ -90,13 +96,13 @@ const Details = () => {
                 <div className="my-5">
                   <Link to="/">
                     <span className="px-5 rounded bg-[#A62F03] text-white py-2 cursor-pointer">
-                      Back To Residential
+                      Back to advertisements
                     </span>
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-span-5 bg-white rounded my-20 shadow-md">
+            <div data-aos="fade-up-left" className="col-span-5 bg-white rounded my-20 shadow-md">
               <div className="px-5 py-5">
                 <img
                   className="rounded"

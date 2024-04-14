@@ -9,9 +9,9 @@ const ErrorPage = () => {
             <Header></Header>
             <div className='flex justify-center'>
                 <div>
-                    <img className='' src="/src/assets/404.gif" alt="" />
+                    <img className='mt-5' src="/src/assets/404.gif" alt="" />
                     <div className='flex justify-center'>
-                        <Link to="/"><button className='py-2 px-10 bg-[#A62F03] text-white mb-10 rounded'>Back To Home</button></Link>
+                        <Link to="/"><button className='py-2 px-10 bg-[#ECF1FF] text-[#092D32] mb-10 rounded font-semibold'>Back to home</button></Link>
                     </div>
                 </div>
             </div>

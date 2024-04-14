@@ -27,7 +27,7 @@ const Slider = () => {
       className="mySwiper"
     >
       {slider.map((slides, index) => ( slides.slide &&  <SwiperSlide key={index}>
-          <div
+          <div data-aos="fade-zoom-in"
             className="bg-no-repeat bg-cover bg-center"
             style={{
               backgroundImage: slides.slide ? `url(${slides.slide})` : 'none',
