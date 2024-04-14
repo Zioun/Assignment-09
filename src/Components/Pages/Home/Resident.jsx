@@ -10,7 +10,7 @@ const Resident = ({resident}) => {
     const desc = description.length > 80 ? description.slice(0, 80) : description;
     
   return (
-      <div data-aos="zoom-in-up" className="col-span-4">
+      <div data-aos="zoom-in-up" className="col-span-12 md:col-span-6 lg:col-span-4 px-5">
         <div className="bg-white shadow-md rounded overflow-hidden ">
           <div
             className="hero-overlay overflow-hidden bg-opacity-60 h-[225px] bg-cover"

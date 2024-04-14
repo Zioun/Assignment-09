@@ -37,7 +37,7 @@ const Header = () => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
-      <div data-aos="fade-down" className="px-10 py-3 shadow z-10">
+      <div data-aos="fade-down" className="md:px-10 py-3 shadow z-10">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -69,8 +69,8 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex gap-3">
-              <img src={logo} alt="logo" />
-              <div className="font-bold text-[22px] leading-[23px]">
+              <img className="w-[40px] h-[40px] md:w-[51px] md:h-[51px]" src={logo} alt="logo" />
+              <div className="font-bold md:text-[22px] leading-5 md:leading-[23px]">
                 <h1 className="text-[#A62F03] tracking-wide">WSP</h1>
                 <h1 className="tracking-wide">Residence</h1>
               </div>
@@ -82,14 +82,15 @@ const Header = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <div className="flex join-item gap-5">
-              <div className="flex items-center gap-3 font-bold text-[16px]">
-                <span className="text-[#A62F03]">
-                  <FaPhoneAlt />
-                </span>
-                <p>(305) 555-4446</p>
+            <div className="flex items-center join-item gap-5">
+              <div className="hidden md:block">
+                <div className="flex items-center gap-3 font-bold  text-[16px] ">
+                  <span className="text-[#A62F03]">
+                    <FaPhoneAlt />
+                  </span>
+                  <p>(305) 555-4446</p>
+                </div>
               </div>
-              <div className=""></div>
               <div
                 className="dropdown dropdown-end tooltip tooltip-bottom z-10"
                 data-tip={user && user.displayName}

@@ -53,13 +53,13 @@ const Details = () => {
     AOS.refresh();
 }, []);
 
-// Create a custom icon using Leaflet's L.Icon class
+// Create a custom icon
 const locationIcon = "https://i.ibb.co/FxgTyz7/marker-icon.png";
 const customIcon = new L.Icon({
-  iconUrl: locationIcon, // Path to your icon image
-  iconSize: [25, 41], // Size of the icon
-  iconAnchor: [12, 41], // Anchor point of the icon
-  popupAnchor: [1, -34] // Popup anchor of the icon
+  iconUrl: locationIcon,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34]
 });
   
   return (
