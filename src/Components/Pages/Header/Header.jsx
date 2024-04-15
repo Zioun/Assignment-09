@@ -33,11 +33,7 @@ const Header = () => {
   );
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-      <div data-aos="fade-down" className="md:px-10 py-3 shadow z-10">
+      <div data-aos="fade-down" className="md:px-10 py-3 w-full shadow z-10">
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -72,7 +68,7 @@ const Header = () => {
             </div>
             <div className="flex gap-3">
               <img
-                className="w-[40px] h-[40px] md:w-[51px] md:h-[51px]"
+                className="w-[40px] h-[40px] md:w-[51px] md:h-[51px] object-cover"
                 src={logo}
                 alt="logo"
               />
@@ -98,7 +94,7 @@ const Header = () => {
                 </div>
               </div>
               <div
-                className="dropdown dropdown-end tooltip tooltip-bottom z-10"
+                className="dropdown dropdown-end tooltip tooltip-left md:tooltip-bottom z-10"
                 data-tip={user && user.displayName}
               >
                 <div

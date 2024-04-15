@@ -3,12 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { SlSizeFullscreen } from "react-icons/sl";
 import { VscLayoutStatusbar } from "react-icons/vsc";
 import { FaRegMoneyBill1 } from "react-icons/fa6";
+import "./slider.css";
 
 const Slider = () => {
   const [slider, setSlider] = useState([]);
@@ -21,10 +22,18 @@ const Slider = () => {
 
   return (
     <Swiper
-      pagination={{ type: "progressbar" }}
-      navigation={true}
-      modules={[Pagination, Navigation]}
-      className="mySwiper"
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
     >
       {slider.map(
         (slides, index) =>

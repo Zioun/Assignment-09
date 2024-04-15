@@ -5,6 +5,7 @@ import Resident from './Resident';
 import { Helmet } from 'react-helmet-async';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Testimonial from './Testimonial';
 
 const Home = () => {
     const resident = useLoaderData();
@@ -27,7 +28,7 @@ const Home = () => {
                     <p className='mt-5 text-[#7A7A7A] text-[15px]'>Embark on a journey to find your dream home with our exclusive collection of properties for sale. From elegant beachfront villas to contemporary urban lofts, our portfolio showcases an array of distinctive residences designed to exceed expectations. Explore architectural marvels, serene retreats, and charming family homes crafted with precision and care. Each property embodies a unique blend of style, comfort, and functionality, offering an unparalleled living experience. Whether you're a first-time buyer or a seasoned investor, our team is dedicated to guiding you through every step of the home-buying process. Embrace the opportunity to own a piece of paradise and create a lifetime of cherished memories in your new home.</p>
                 </div>
                 <div data-aos="zoom-in-down" className='rounded border-t-2 border-[#A62F03] col-span-10 md:col-span-5 p-5 shadow-lg'>
-                    <span className='bg-[#A62F03] px-5 py-1 rounded-full text-white text-[16px]'>For Rent.</span>
+                    <span className='bg-[#A62F03] px-5 py-1 rounded-full text-white text-[16px]'>For Rent</span>
                     <p className='mt-5 text-[#7A7A7A] text-[15px]'>Discover a world of comfort and convenience with our meticulously crafted rental properties. From luxurious apartments with breathtaking city views to cozy cottages nestled in serene landscapes, we offer a diverse range of rental options to suit every lifestyle. Enjoy modern amenities, spacious layouts, and a vibrant community atmosphere. Whether you're seeking a temporary retreat or a long-term residence, our rental properties provide the perfect backdrop for creating lasting memories. Experience hassle-free living with responsive maintenance services and attentive property management. Make your next move a seamless transition into the lifestyle you deserve with our exceptional rental offerings.</p>
                 </div>
             </div>
@@ -45,6 +46,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Testimonial></Testimonial>
         </div>
     );
 };

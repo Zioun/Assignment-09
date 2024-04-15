@@ -64,18 +64,18 @@ const customIcon = new L.Icon({
   
   return (
     <>
-      <div className="bg-[#F8F8F8]">
+      <div className="bg-[#F8F8F8] px-5">
       <Helmet>
           <title>Residence-Details-{id}</title>
         </Helmet>
         <ScrollRestoration />
-        <div className="container m-auto mb-20">
+        <div className="container m-auto mb-20 mt-10">
           <div className="grid grid-cols-12 gap-5">
-            <div data-aos="fade-up-right" className="col-span-7 bg-white rounded my-20 shadow-md">
+            <div data-aos="zoom-in-up" className="col-span-12 xl:col-span-7 bg-white rounded xl:my-10 shadow-md">
               <div>
-                <div className="px-5 pt-5 flex justify-between items-center">
+                <div className="px-5 pt-5 flex flex-col text-center lg:text-left lg:flex-row justify-between items-center">
                   <div>
-                    <div className="py-3 flex gap-5">
+                    <div className="py-3 flex justify-center flex-col md:flex-row lg:justify-start gap-5">
                       <h1 className="px-5 py-1 rounded text-white bg-[#262525] text-[14px]">
                         {segment_name}
                       </h1>
@@ -96,7 +96,7 @@ const customIcon = new L.Icon({
               </div>
               <div className="px-5 py-5">
                 <img
-                  className="rounded"
+                  className="rounded object-cover"
                   src={image_url}
                   alt=""
                 />
@@ -117,10 +117,10 @@ const customIcon = new L.Icon({
                 </div>
               </div>
             </div>
-            <div data-aos="fade-up-left" className="col-span-5 bg-white rounded my-20 shadow-md">
+            <div data-aos="zoom-in-up" className="col-span-12 xl:col-span-5 bg-white rounded xl:my-10 shadow-md mb-[20px] xl-mb-[0px]">
               <div className="px-5 py-5">
                 <img
-                  className="rounded"
+                  className="rounded object-cover"
                   src={architect}
                   alt="architect"
                 />
@@ -132,7 +132,7 @@ const customIcon = new L.Icon({
                     </p>
                     <div className="bg-[#F8F8F8] px-5 py-5 rounded flex flex-col gap-1">
                       {area && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Area : </h1>
                           {area ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -144,7 +144,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {year_built && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Year Built : </h1>
                           {year_built ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -156,7 +156,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {facilities && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Facilities : </h1>
                           <div className="text-center flex  gap-2">
                             {facilities.map((facilities) => (
@@ -168,7 +168,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {building_amenities && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Building Amenities : </h1>
                           <div className="text-center flex  gap-2">
                             {building_amenities ? (
@@ -184,7 +184,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {pet_policy && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Pet Policy : </h1>
                           {pet_policy ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -196,7 +196,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {num_bedrooms && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Bedrooms : </h1>
                           {num_bedrooms ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -208,7 +208,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {num_bathrooms && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Bathrooms : </h1>
                           {num_bathrooms ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -220,7 +220,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {garage_capacity && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Garage Capacity : </h1>
                           {garage_capacity ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -232,7 +232,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {lot_size && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Lot Size : </h1>
                           {lot_size ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -244,7 +244,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {hoa_fee && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Hoa Fee : </h1>
                           {hoa_fee ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -256,7 +256,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {school_district && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">School District : </h1>
                           {school_district ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -268,7 +268,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {lease_terms && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Lease Terms : </h1>
                           {lease_terms ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -280,7 +280,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {nearby_amenities && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Nearby Amenities : </h1>
                           {nearby_amenities ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -292,7 +292,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {level_of_care && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Level Of Care : </h1>
                           {level_of_care ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -304,7 +304,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {amenities && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Amenities : </h1>
                           {amenities ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -316,7 +316,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {security_features && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Security Features : </h1>
                           {security_features ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -328,7 +328,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {amenities && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Amenities : </h1>
                           <div className="text-center flex  gap-2">
                             {amenities.map((amenities) => (
@@ -340,7 +340,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {available_dates && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Available Dates : </h1>
                           <div className="text-center flex  gap-2">
                             {available_dates.map((available_dates) => (
@@ -352,7 +352,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {minimum_stay && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Minimum Stay : </h1>
                           {minimum_stay ? (
                             <p className="text-[12px] py-1 text-[#FFFFFF] bg-[#A62F03] px-2 rounded">
@@ -364,7 +364,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {nearby_attractions && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Nearby Attractions : </h1>
                           <div className="text-center flex  gap-2">
                             {nearby_attractions.map((nearby_attractions) => (
@@ -376,7 +376,7 @@ const customIcon = new L.Icon({
                         </div>
                       )}
                       {medical_services && (
-                        <div className="flex justify-between items-center">
+                        <div className="flex flex-col sm:flex-row justify-between items-center">
                           <h1 className="font-semibold">Medical Services : </h1>
                           <div className="text-center flex  gap-2">
                             {medical_services.map((medical_services) => (
@@ -394,7 +394,7 @@ const customIcon = new L.Icon({
               </div>
             </div>
           </div>
-          <div className="map-container">
+          <div className="map-container" data-aos="zoom-in-up">
             <MapContainer center={coordinates} zoom={13} style={{ height: "400px", width: "100%" }}>
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

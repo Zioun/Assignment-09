@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+  const [conShowPassword, setconShowPassword] = useState(false);
 
   useEffect(() => {
     AOS.init({ duration: 500 });
@@ -31,10 +32,13 @@ const Register = () => {
     const email = form.get("email");
     const image = form.get("image");
     const password = form.get("password");
+    const conpassword = form.get("conpassword");
     const isValidImage = await is_valid_image_url(image);
     if(name === "" || email === "" || password === "" || image === ""){
       toast.error("Input field must not be empty.");
-    } else if (!isValidImage) {
+    }else if(password !== conpassword){
+      toast.error('Passwords do not match');
+    }else if (!isValidImage) {
       toast.error('Image must be .png, .jpg, .gif, .svg');
     }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
       toast.error("Please provide an valid Email.");
@@ -60,21 +64,22 @@ const Register = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="flex justify-center mt-10 px-2 md:mb-20 mb-10">
+    <div>
+      <Toaster position="top-center" reverseOrder={false}/> 
+    <div data-aos="zoom-in-up" className="md:flex justify-center mt-10 px-3 md:mb-20 mb-10">
       <Helmet>
         <title>Residence-Register</title>
       </Helmet>
-      <Toaster position="top-center" reverseOrder={false}/>
       <div className="max-w-[1050px]">
-        <div className="grid grid-cols-12 md:h-[550px] h-[460px]">
+        <div className="grid grid-cols-12 md:h-[550px] h-[460px] border rounded-2xl">
           <div className="col-span-6 rounded-2xl hidden w-full md:block">
             <img
-              className="rounded-l-2xl h-full"
+              className="rounded-l-2xl h-full object-cover"
               src="https://i.ibb.co/NrtzjfX/home-section.jpg"
               alt=""
             />
           </div>
-          <div className="col-span-12 md:col-span-6 border rounded-2xl md:rounded-r-2xl px-5 pt-[30px]">
+          <div className="col-span-12 md:col-span-6 rounded-2xl md:rounded-r-2xl px-5 pt-[30px]">
             <form onSubmit={handleRegister} className="">
               <div className="">
                 <div>
@@ -107,9 +112,18 @@ const Register = () => {
                       name="password"
                     />
                     <div onClick={() => setShowPassword(!showPassword)} className="text-[20px] absolute right-5 cursor-pointer">
-                      {showPassword ? <span ><FaRegEye /></span> : <span><FaRegEyeSlash /></span>}
-                      
-                      
+                      {showPassword ? <span ><FaRegEyeSlash /></span> : <span><FaRegEye /></span>}
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center relative">
+                    <input
+                      className="border pl-4 outline-none rounded h-[45px] w-full"
+                      type={conShowPassword ? "text" : "password"}
+                      placeholder="Confirm Password"
+                      name="conpassword"
+                    />
+                    <div onClick={() => setconShowPassword(!conShowPassword)} className="text-[20px] absolute right-5 cursor-pointer">
+                      {conShowPassword ? <span ><FaRegEyeSlash /></span> : <span><FaRegEye /></span>}
                     </div>
                   </div>
                   <button className="w-full h-[45px] border bg-[#A62F03] text-white rounded">
@@ -122,6 +136,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

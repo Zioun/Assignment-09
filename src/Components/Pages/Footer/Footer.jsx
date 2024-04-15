@@ -26,10 +26,11 @@ const Footer = () => {
         </div>
         <div className=" md:flex md:flex-col md:items-center ">
           <h6 className="text-white font-semibold text-[16px] mb-2">Pages</h6>
+          <Link to="/"><p className="link link-hover">Home</p></Link>
           <Link to="/about"><p className="link link-hover">About</p></Link>
-          <Link to="/contact-us"><p className="link link-hover">Contact Us</p></Link>
-          <Link to="/details/001"><p className="link link-hover">Details</p></Link>
+          <Link to="/details/001"><p className="link link-hover">Details</p></Link>   
           <Link to="/profile"><p className="link link-hover">Profile</p></Link>
+          <Link to="/contact-us"><p className="link link-hover">Contact Us</p></Link>
         </div>
         <div className=" md:flex md:flex-col md:items-center ">
           <h6 className="text-white font-semibold text-[16px] mb-2">Contact</h6>

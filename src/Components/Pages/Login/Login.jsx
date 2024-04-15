@@ -66,19 +66,19 @@ const Login = () => {
       })
     }
   return (
-    <div className="flex justify-center mt-10 px-2 md:mb-20 mb-10">
+    <div className="md:flex justify-center mt-10 px-3 md:mb-20 mb-10">
       <Helmet><title>Residence-Login</title></Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
-      <div data-aos="zoom-in-up" className="max-w-[1050px]">
+      <div data-aos="zoom-in-up" className="max-w-[1050px] border rounded-2xl">
         <div className="grid grid-cols-12 h-[550px]">
           <div className="col-span-12 md:col-span-6 rounded-2xl md:rounded-2xl hidden md:block">
             <img
-              className="rounded-l-2xl h-full"
+              className="rounded-l-2xl h-full object-cover"
               src="https://i.ibb.co/NrtzjfX/home-section.jpg"
               alt=""
             />
           </div>
-          <div className="col-span-12 md:col-span-6 border rounded-2xl md:rounded-2xl px-5 md:pt-[90px] pt-10">
+          <div className="col-span-12 md:col-span-6 rounded-2xl md:rounded-2xl px-5 md:pt-[90px] pt-10">
             <form onSubmit={handleLogin} className="">
               <div className="">
                 <div>
