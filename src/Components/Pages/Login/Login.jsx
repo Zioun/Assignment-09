@@ -34,9 +34,12 @@ const Login = () => {
         }else{
           userLogin(email,password)
           .then((result)=>{
-            toast.success("Account successfully login.");
             e.target.reset();
-            navigate(location.state ? location.state : "/")
+            toast.success("Account successfully login.");
+            setTimeout(() => {
+              navigate(location.state ? location.state : "/")
+            }, 1000);
+            
           })
           .catch((error) => {
             toast.error("Incorrect email or password.");
@@ -48,8 +51,10 @@ const Login = () => {
       console.log("hello")
       googleLogin()
       .then((result) => {
-        navigate(location.state ? location.state : "/")
         toast.success("Account successfully login.");
+        setTimeout(() => {
+          navigate(location.state ? location.state : "/")
+        }, 1000);
       })
       .catch((error) => {
         toast.error("Something was wrong.");
@@ -59,7 +64,9 @@ const Login = () => {
       gitHubLogin()
       .then((result) => {
         toast.success("Account successfully login.");
-        navigate(location.state ? location.state : "/")
+        setTimeout(() => {
+          navigate(location.state ? location.state : "/")
+        }, 1000);
       })
       .catch((error) => {
         toast.error("Something was wrong.");
