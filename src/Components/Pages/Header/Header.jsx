@@ -27,6 +27,9 @@ const Header = () => {
         <NavLink to="/about">About</NavLink>
       </li>
       <li>
+        <NavLink to="/profile">Update Profile</NavLink>
+      </li>
+      <li>
         <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
     </>
@@ -85,7 +88,7 @@ const Header = () => {
           </div>
           <div className="navbar-end">
             <div className="flex items-center join-item gap-5">
-              <div className="hidden md:block">
+              <div className="hidden xl:block">
                 <div className="flex items-center gap-3 font-bold  text-[16px] ">
                   <span className="text-[#A62F03]">
                     <FaPhoneAlt />
@@ -125,7 +128,7 @@ const Header = () => {
                   <Link to="/profile">
                     <li>
                       <p className="flex justify-between">
-                        <span>Profile</span>
+                        <span>Update Profile</span>
                       </p>
                     </li>
                   </Link>
@@ -140,6 +143,12 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
+             <button className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]">
+             <Link to="/login">{user && user ? (
+                        <span onClick={handleLogout}>Logout</span>
+                      ) : (
+                        <span>Login</span>
+                      )}</Link></button>
             </div>
           </div>
         </div>

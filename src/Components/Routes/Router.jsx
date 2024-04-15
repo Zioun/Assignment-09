@@ -47,7 +47,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/contact-us",
-        element: <ContactUs></ContactUs>,
+        element: <PrivateRoute><ContactUs></ContactUs></PrivateRoute>,
         loader: () => fetch("../residential.json")
       },
     ],

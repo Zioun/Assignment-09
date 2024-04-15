@@ -36,6 +36,8 @@ const Register = () => {
     const isValidImage = await is_valid_image_url(image);
     if(name === "" || email === "" || password === "" || image === ""){
       toast.error("Input field must not be empty.");
+    }if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
+      toast.error("Password should contain both uppercase and lowercase characters.");
     }else if(password !== conpassword){
       toast.error('Passwords do not match');
     }else if (!isValidImage) {

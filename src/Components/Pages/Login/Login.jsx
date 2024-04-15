@@ -48,8 +48,8 @@ const Login = () => {
       console.log("hello")
       googleLogin()
       .then((result) => {
-        toast.success("Account successfully login.");
         navigate(location.state ? location.state : "/")
+        toast.success("Account successfully login.");
       })
       .catch((error) => {
         toast.error("Something was wrong.");
@@ -99,7 +99,7 @@ const Login = () => {
                       name="password"
                     />
                     <div onClick={() => setShowPassword(!showPassword)} className="text-[20px] absolute right-5 cursor-pointer">
-                      {showPassword ? <span ><FaRegEye /></span> : <span><FaRegEyeSlash /></span>}
+                      {showPassword ? <span><FaRegEyeSlash /></span>  : <span ><FaRegEye /></span>}
                       
                       
                     </div>

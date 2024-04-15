@@ -9,7 +9,7 @@ const Testimonial = () => {
         <h1 className="text-[40px]">Our Clients Reviews</h1>
         <p className="max-w-[700px] text-[16px] m-auto mb-10 mt-3 text-[#7A7A7A] font-normal">Discover a wealth of insights from our community's diverse reviews. From gadgets to getaways, books to bites, our platform offers honest opinions to inform your decisions. Join the conversation, share your experiences, and navigate the world of possibilities with confidence</p>
       </div>
-      <div className="h-[1000px] md:h-[800px] lg:h-80 w-full carousel carousel-vertical">
+      <div className="h-[1000px] md:h-[900px] lg:h-80 w-full carousel carousel-vertical">
         <div className="carousel-item h-full w-full container m-auto">
           <div className="flex flex-col lg:flex-row gap-5 items-center">
             <img className="rounded-2xl border bg-[#A62F03] lg:w-[300px] h-full object-cover" src="https://i.ibb.co/gjt5fdS/cccccc-removebg-preview.png" />
