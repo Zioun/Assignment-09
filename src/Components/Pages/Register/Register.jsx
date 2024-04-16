@@ -18,7 +18,6 @@ const Register = () => {
     AOS.init({ duration: 500 });
     AOS.refresh();
 }, []);
-
   const handleRegister = async (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
