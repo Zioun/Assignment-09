@@ -29,7 +29,7 @@ const Register = () => {
     const conpassword = form.get("conpassword");
     if(name === "" || email === "" || password === "" || image === ""){
       toast.error("Input field must not be empty.");
-    }if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
+    }else if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
       toast.error("Password should contain both uppercase and lowercase characters.");
     }else if(password !== conpassword){
       toast.error('Passwords do not match');
