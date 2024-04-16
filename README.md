@@ -1,9 +1,9 @@
-# WSP Residential Website
+# WSP Residence
 
-Welcome to WSP Residential, a fully responsive website for property management and real estate services. This README file provides an overview of the website's features, functionalities, and deployment details.
+Welcome to WSP Residence, a fully responsive website for property management and real estate services. This README file provides an overview of the website's features, functionalities, and deployment details.
 
 ## Website Link
-[Visit WSP Residential](https://assignment-09-30e4b.web.app/)
+[Visit WSP Residence](https://assignment-09-30e4b.web.app/)
 
 ## Features
 
@@ -59,7 +59,7 @@ Welcome to WSP Residential, a fully responsive website for property management a
 16. **Image store**:
     - Hosted JSON data and images on imgbb
 ## Deployment
-The website is deployed on Firebase and is accessible via the following link: [WSP Residential](https://assignment-09-30e4b.web.app/)
+The website is deployed on Firebase and is accessible via the following link: [WSP Residence](https://assignment-09-30e4b.web.app/)
 
 ## Usage
 1. Visit the website using the provided link.
@@ -72,5 +72,5 @@ The website is deployed on Firebase and is accessible via the following link: [W
 ## Feedback
 For any feedback, suggestions, or issues, please contact [wsp@gmail.com].
 
-Thank you for using WSP Residential! We hope you find your dream property with us.
+Thank you for using WSP Residence! We hope you find your dream property with us.
 
