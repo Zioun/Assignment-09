@@ -26,9 +26,11 @@ const Header = () => {
       <li>
         <NavLink to="/about">About</NavLink>
       </li>
-      <li>
-        <NavLink to="/profile">Update Profile</NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink to="/profile">Update Profile</NavLink>
+        </li>
+      )}
       <li>
         <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
@@ -125,13 +127,16 @@ const Header = () => {
                   tabIndex={0}
                   className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-[#A62F03] font-semibold border"
                 >
-                  <Link to="/profile">
-                    <li>
-                      <p className="flex justify-between">
-                        <span>Update Profile</span>
-                      </p>
-                    </li>
-                  </Link>
+                  {user && (
+                    <Link to="/profile">
+                      <li>
+                        <p className="flex justify-between">
+                          <span>Update Profile</span>
+                        </p>
+                      </li>
+                    </Link>
+                  )}
+
                   <li>
                     <Link to="/login">
                       {user && user ? (
@@ -143,12 +148,15 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-             <button className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]">
-             <Link to="/login">{user && user ? (
-                        <span onClick={handleLogout}>Logout</span>
-                      ) : (
-                        <span>Login</span>
-                      )}</Link></button>
+              <button className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]">
+                <Link to="/login">
+                  {user && user ? (
+                    <span onClick={handleLogout}>Logout</span>
+                  ) : (
+                    <span>Login</span>
+                  )}
+                </Link>
+              </button>
             </div>
           </div>
         </div>

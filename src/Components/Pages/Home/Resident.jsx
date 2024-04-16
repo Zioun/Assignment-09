@@ -57,7 +57,7 @@ const Resident = ({resident}) => {
             </div>
             <div>
               <Link to={`/details/${id}`}><button className="mb-3 py-2 px-10 border bg-[#A62F03] text-white rounded">
-                Details
+              View Property
               </button></Link>
               <hr className="mb-3" />
             </div>

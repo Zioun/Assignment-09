@@ -91,7 +91,7 @@ const Slider = () => {
                         </div>
                         <Link to={`/details/${slides.id}`}>
                           <button className="bg-[#A62F03] px-[100px] py-[10px] rounded-full mt-5 ">
-                            Details
+                            View Property
                           </button>
                         </Link>
                       </div>
