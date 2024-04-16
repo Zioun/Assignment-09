@@ -18,12 +18,6 @@ const Register = () => {
     AOS.init({ duration: 500 });
     AOS.refresh();
 }, []);
-  
-  const is_valid_image_url = async (url) => {
-    const supportedFormats = ['.png', '.jpg', '.jpeg', '.gif', '.svg'];
-    const isValidFormat = supportedFormats.some(format => url.toLowerCase().endsWith(format));
-    return isValidFormat;
-  };
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -33,15 +27,12 @@ const Register = () => {
     const image = form.get("image");
     const password = form.get("password");
     const conpassword = form.get("conpassword");
-    const isValidImage = await is_valid_image_url(image);
     if(name === "" || email === "" || password === "" || image === ""){
       toast.error("Input field must not be empty.");
     }if (!/[A-Z]/.test(password) || !/[a-z]/.test(password)) {
       toast.error("Password should contain both uppercase and lowercase characters.");
     }else if(password !== conpassword){
       toast.error('Passwords do not match');
-    }else if (!isValidImage) {
-      toast.error('Image must be .png, .jpg, .gif, .svg');
     }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
       toast.error("Please provide an valid Email.");
     }else if(password.length < 6){

@@ -19,19 +19,11 @@ const Profile = () => {
     setImage(user.photoURL || "");
   }, [user]);
 
-  const is_valid_image_url = async (url) => {
-    const isValidFormat = /\.(png|jpg|jpeg|gif|svg)$/i.test(url);
-    return isValidFormat;
-  };
-
   const handleUpdate = async (e) => {
     e.preventDefault();
-    const isValidImage = await is_valid_image_url(image);
 
     if (name === "" || image === "") {
       toast.error("Input fields must not be empty.");
-    } else if (!isValidImage) {
-      toast.error("Image must be .png, .jpg, .gif, .svg");
     } else {
       try {
         await updateProfile(user, {

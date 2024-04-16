@@ -148,12 +148,12 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <button className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]">
+              <button className="">
                 <Link to="/login">
                   {user && user ? (
-                    <span onClick={handleLogout}>Logout</span>
+                    <span className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]" onClick={handleLogout}>Logout</span>
                   ) : (
-                    <span>Login</span>
+                    <span className="md:btn text-white rounded btn-sm h-5 px-5 md:px-6 bg-[#A62F03] md:bg-[#A62F03] md:text-white md:hover:bg-[#A62F03]">Login</span>
                   )}
                 </Link>
               </button>
