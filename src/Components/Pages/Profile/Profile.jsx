@@ -47,7 +47,7 @@ const Profile = () => {
       >
         <ScrollRestoration />
         <Helmet>
-          <title>Residence-Update_Profile</title>
+          <title>WSP_Residence-Update_Profile</title>
         </Helmet>
 
         <div className="max-w-[1050px]">

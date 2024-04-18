@@ -60,7 +60,7 @@ const Register = () => {
       <Toaster position="top-center" reverseOrder={false}/> 
     <div data-aos="zoom-in-up" className="md:flex justify-center mt-10 px-3 md:mb-20 mb-10">
       <Helmet>
-        <title>Residence-Register</title>
+        <title>WSP_Residence-Register</title>
       </Helmet>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 md:h-[550px] h-[460px] border rounded-2xl">

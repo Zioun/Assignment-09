@@ -18,7 +18,7 @@ const ContactUs = () => {
     >
       <ScrollRestoration />
       <Helmet>
-        <title>Residence-Contact_Us</title>
+        <title>WSP_Residence-Contact_Us</title>
       </Helmet>
       <div className="max-w-[1050px]">
         <div className="grid grid-cols-12 md:h-[750px]">

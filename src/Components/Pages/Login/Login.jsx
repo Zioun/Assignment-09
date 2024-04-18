@@ -74,7 +74,7 @@ const Login = () => {
     }
   return (
     <div className="md:flex justify-center mt-10 px-3 md:mb-20 mb-10">
-      <Helmet><title>Residence-Login</title></Helmet>
+      <Helmet><title>WSP_Residence-Login</title></Helmet>
       <Toaster position="top-center" reverseOrder={false}/>
       <div data-aos="zoom-in-up" className="max-w-[1050px] border rounded-2xl">
         <div className="grid grid-cols-12 h-[550px]">

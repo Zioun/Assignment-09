@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import { Link, ScrollRestoration } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet-async";
 
 const ErrorPage = () => {
     useEffect(() => {
@@ -13,6 +14,9 @@ const ErrorPage = () => {
     return (
         <div data-aos="zoom-in-up" className='font-roboto flex flex-col h-screen'>
             <ScrollRestoration />
+            <Helmet>
+        <title>WSP_Residence-404</title>
+      </Helmet>
             <Header></Header>
             <div className='flex justify-center'>
                 <div>

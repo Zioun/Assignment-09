@@ -12,7 +12,7 @@ const About = () => {
     <div className="container max-w-[1200px] m-auto my-20 px-5">
       <ScrollRestoration />
       <Helmet>
-        <title>Residence-About</title>
+        <title>WSP_Residence-About</title>
       </Helmet>
       <div className="flex flex-col items-center gap-5">
         <div data-aos="zoom-in-down" className="text-center">

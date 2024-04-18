@@ -66,7 +66,7 @@ const customIcon = new L.Icon({
     <>
       <div className="bg-[#F8F8F8] px-5">
       <Helmet>
-          <title>Residence-Details-{id}</title>
+          <title>WSP_Residence-Details-{id}</title>
         </Helmet>
         <ScrollRestoration />
         <div className="container m-auto mb-20 mt-10">

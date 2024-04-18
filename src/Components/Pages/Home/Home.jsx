@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <div ref={contentRef}>
             <Helmet>
-                <title>Residence-Home</title>
+                <title>WSP_Residence-Home</title>
             </Helmet>
             <Slider />
             <div className='container m-auto grid grid-cols-10 py-10 bg-[#FFFFFF] gap-5 max-w-[1400px] px-5'>
